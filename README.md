@@ -1,6 +1,6 @@
 # 🔥 Hot CUDAs — CUDA/GPU 开源项目知识库
 
-> 自动整理 2026-05-17 | 36 个热门项目 | 深度源码分析 · Git Submodules · 持续更新
+> 自动整理 2026-05-17 | 39 个热门项目 | 深度源码分析 · Git Submodules · 持续更新
 
 ## 📦 使用方式
 
@@ -47,14 +47,17 @@ git submodule update --remote
 | 26 | **cuda-samples** | 9k | `cuda-samples/` | [NVIDIA/cuda-samples](https://github.com/NVIDIA/cuda-samples) |
 | 27 | **OneFlow** | 9k | `oneflow/` | [Oneflow-Inc/oneflow](https://github.com/Oneflow-Inc/oneflow) |
 | 28 | **LMCache** | 8k | `lmcache/` | [LMCache/LMCache](https://github.com/LMCache/LMCache) |
-| 29 | **DeepGEMM** | 7k | `deepgemm/` | [deepseek-ai/DeepGEMM](https://github.com/deepseek-ai/DeepGEMM) |
-| 30 | **Warp** | 7k | `warp/` | [NVIDIA/warp](https://github.com/NVIDIA/warp) |
-| 31 | **FasterTransformer** | 6k | `faster-transformer/` | [NVIDIA/FasterTransformer](https://github.com/NVIDIA/FasterTransformer) |
-| 32 | **TileLang** | 6k | `tilelang/` | [tile-ai/tilelang](https://github.com/tile-ai/tilelang) |
-| 33 | **Chitu** | 3k | `chitu/` | [thu-pacman/chitu](https://github.com/thu-pacman/chitu) |
-| 34 | **RTP-LLM** | 1k | `rtp-llm/` | [alibaba/rtp-llm](https://github.com/alibaba/rtp-llm) |
-| 35 | **RAFT** | 1k | `raft/` | [rapidsai/raft](https://github.com/rapidsai/raft) |
-| 36 | **UCC** | 307 | `ucc/` | [openucx/ucc](https://github.com/openucx/ucc) |
+| 29 | **vid2vid** | 9k | `vid2vid/` | [NVIDIA/vid2vid](https://github.com/NVIDIA/vid2vid) |
+| 30 | **jetson-inference** | 9k | `jetson-inference/` | [dusty-nv/jetson-inference](https://github.com/dusty-nv/jetson-inference) |
+| 31 | **tensorrtx** | 8k | `tensorrtx/` | [wang-xinyu/tensorrtx](https://github.com/wang-xinyu/tensorrtx) |
+| 32 | **DeepGEMM** | 7k | `deepgemm/` | [deepseek-ai/DeepGEMM](https://github.com/deepseek-ai/DeepGEMM) |
+| 33 | **Warp** | 7k | `warp/` | [NVIDIA/warp](https://github.com/NVIDIA/warp) |
+| 34 | **FasterTransformer** | 6k | `faster-transformer/` | [NVIDIA/FasterTransformer](https://github.com/NVIDIA/FasterTransformer) |
+| 35 | **TileLang** | 6k | `tilelang/` | [tile-ai/tilelang](https://github.com/tile-ai/tilelang) |
+| 36 | **Chitu** | 3k | `chitu/` | [thu-pacman/chitu](https://github.com/thu-pacman/chitu) |
+| 37 | **RTP-LLM** | 1k | `rtp-llm/` | [alibaba/rtp-llm](https://github.com/alibaba/rtp-llm) |
+| 38 | **RAFT** | 1k | `raft/` | [rapidsai/raft](https://github.com/rapidsai/raft) |
+| 39 | **UCC** | 307 | `ucc/` | [openucx/ucc](https://github.com/openucx/ucc) |
 
 ---
 
