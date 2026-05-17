@@ -1,0 +1,7 @@
+# Analysis reports - local only, not tracked
+*_analysis_report.md
+*_analysis.md
+*_detailed_analysis.md
+
+# Submodule source directories (managed by git submodule)
+*/*/
