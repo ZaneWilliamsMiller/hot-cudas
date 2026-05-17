@@ -1,143 +1,143 @@
 [submodule "pytorch"]
-	path = pytorch
+	path = pytorch/pytorch
 	url = https://github.com/pytorch/pytorch.git
 
 [submodule "vllm"]
-	path = vllm
+	path = vllm/vllm
 	url = https://github.com/vllm-project/vllm.git
 
 [submodule "deepspeed"]
-	path = deepspeed
+	path = deepspeed/deepspeed
 	url = https://github.com/deepspeedai/DeepSpeed.git
 
 [submodule "llm-c"]
-	path = llm-c
+	path = llm-c/llm.c
 	url = https://github.com/karpathy/llm.c.git
 
 [submodule "sglang"]
-	path = sglang
+	path = sglang/sglang
 	url = https://github.com/sgl-project/sglang.git
 
 [submodule "flash-attention"]
-	path = flash-attention
+	path = flash-attention/flash-attention
 	url = https://github.com/Dao-AILab/flash-attention.git
 
 [submodule "instant-ngp"]
-	path = instant-ngp
+	path = instant-ngp/instant-ngp
 	url = https://github.com/NVlabs/instant-ngp.git
 
 [submodule "megatron-lm"]
-	path = megatron-lm
+	path = megatron-lm/megatron-lm
 	url = https://github.com/NVIDIA/Megatron-LM.git
 
 [submodule "deep-learning-examples"]
-	path = deep-learning-examples
+	path = deep-learning-examples/deep-learning-examples
 	url = https://github.com/NVIDIA/DeepLearningExamples.git
 
 [submodule "horovod"]
-	path = horovod
+	path = horovod/horovod
 	url = https://github.com/horovod/horovod.git
 
 [submodule "deeplearning4j"]
-	path = deeplearning4j
+	path = deeplearning4j/deeplearning4j
 	url = https://github.com/deeplearning4j/deeplearning4j.git
 
 [submodule "zluda"]
-	path = zluda
+	path = zluda/zluda
 	url = https://github.com/vosen/ZLUDA.git
 
 [submodule "tensorrt-llm"]
-	path = tensorrt-llm
+	path = tensorrt-llm/tensorrt-llm
 	url = https://github.com/NVIDIA/TensorRT-LLM.git
 
 [submodule "open3d"]
-	path = open3d
+	path = open3d/open3d
 	url = https://github.com/isl-org/Open3D.git
 
 [submodule "tvm"]
-	path = tvm
+	path = tvm/tvm
 	url = https://github.com/apache/tvm.git
 
 [submodule "tensorrt"]
-	path = tensorrt
+	path = tensorrt/tensorrt
 	url = https://github.com/NVIDIA/TensorRT.git
 
 [submodule "gpu-puzzles"]
-	path = gpu-puzzles
+	path = gpu-puzzles/gpu-puzzles
 	url = https://github.com/srush/GPU-Puzzles.git
 
 [submodule "taskflow"]
-	path = taskflow
+	path = taskflow/taskflow
 	url = https://github.com/taskflow/taskflow.git
 
 [submodule "hvm2"]
-	path = hvm2
+	path = hvm2/hvm2
 	url = https://github.com/HigherOrderCO/HVM2.git
 
 [submodule "cupy"]
-	path = cupy
+	path = cupy/cupy
 	url = https://github.com/cupy/cupy.git
 
 [submodule "leetcuda"]
-	path = leetcuda
+	path = leetcuda/leetcuda
 	url = https://github.com/xlite-dev/LeetCUDA.git
 
 [submodule "cudf"]
-	path = cudf
+	path = cudf/cudf
 	url = https://github.com/rapidsai/cudf.git
 
 [submodule "cutlass"]
-	path = cutlass
+	path = cutlass/cutlass
 	url = https://github.com/NVIDIA/cutlass.git
 
 [submodule "deepep"]
-	path = deepep
+	path = deepep/deepep
 	url = https://github.com/deepseek-ai/DeepEP.git
 
 [submodule "apex"]
-	path = apex
+	path = apex/apex
 	url = https://github.com/NVIDIA/apex.git
 
 [submodule "cuda-samples"]
-	path = cuda-samples
+	path = cuda-samples/cuda-samples
 	url = https://github.com/NVIDIA/cuda-samples.git
 
 [submodule "oneflow"]
-	path = oneflow
+	path = oneflow/oneflow
 	url = https://github.com/Oneflow-Inc/oneflow.git
 
 [submodule "lmcache"]
-	path = lmcache
+	path = lmcache/lmcache
 	url = https://github.com/LMCache/LMCache.git
 
 [submodule "deepgemm"]
-	path = deepgemm
+	path = deepgemm/deepgemm
 	url = https://github.com/deepseek-ai/DeepGEMM.git
 
 [submodule "warp"]
-	path = warp
+	path = warp/warp
 	url = https://github.com/NVIDIA/warp.git
 
 [submodule "faster-transformer"]
-	path = faster-transformer
+	path = faster-transformer/faster-transformer
 	url = https://github.com/NVIDIA/FasterTransformer.git
 
 [submodule "tilelang"]
-	path = tilelang
+	path = tilelang/tilelang
 	url = https://github.com/tile-ai/tilelang.git
 
 [submodule "chitu"]
-	path = chitu
+	path = chitu/chitu
 	url = https://github.com/thu-pacman/chitu.git
 
 [submodule "rtp-llm"]
-	path = rtp-llm
+	path = rtp-llm/rtp-llm
 	url = https://github.com/alibaba/rtp-llm.git
 
 [submodule "raft"]
-	path = raft
+	path = raft/raft
 	url = https://github.com/rapidsai/raft.git
 
 [submodule "ucc"]
-	path = ucc
+	path = ucc/ucc
 	url = https://github.com/openucx/ucc.git
