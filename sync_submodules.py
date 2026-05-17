@@ -1,14 +1,16 @@
-#!/usr/bin/env python3
-"""Sync all submodules in hot_cudas to their upstream latest HEAD via GitHub Git Data API."""
-import json, os, subprocess, sys
+import json, subprocess, os, sys
+"""
+Sync submodules in hot_cudas repo with upstream.
+Run: python sync_submodules.py
+Can be scheduled via cron/schtasks for automatic daily sync.
+"""
+TOKEN = os.environ.get("GH_TOKEN", "")
+if not TOKEN:
+    print("ERROR: Set GH_TOKEN env var")
+    sys.exit(1)
 
-TOKEN = os.environ["GH_TOKEN"]
-# Auto-detect repo from git remote
-result = subprocess.run(["git", "remote", "get-url", "origin"], capture_output=True, text=True)
-remote = result.stdout.strip()
-# Extract owner/repo from https://github.com/OWNER/REPO.git
-parts = remote.rstrip("/").rstrip(".git").split("/")
-OWNER, REPO = parts[-2], parts[-1]
+OWNER = "ZaneWilliamsMiller"
+REPO = "hot_cudas"
 
 def api(method, endpoint, data=None):
     cmd = ["curl", "-s", "-X", method,
@@ -22,7 +24,6 @@ def api(method, endpoint, data=None):
     return json.loads(r.stdout.decode("utf-8", errors="replace"))
 
 def get_upstream_sha(owner_repo):
-    """Get default branch HEAD SHA."""
     r = api("GET", f"/repos/{owner_repo}")
     if isinstance(r, dict) and r.get("default_branch"):
         branch = r["default_branch"]
@@ -33,30 +34,30 @@ def get_upstream_sha(owner_repo):
             return r2["object"]["sha"]
     return None
 
-# Parse .gitmodules
-submodules = []  # [(upstream_url, top_dir, sub_name)]
-with open(".gitmodules") as f:
-    current = {}
-    for line in f:
-        line = line.strip()
-        if line.startswith("[submodule"):
-            if current.get("url") and current.get("path"):
-                path = current["path"]
-                top_dir = path.split("/")[0]
-                sub_name = path.split("/", 1)[1] if "/" in path else path
-                upstream = current["url"].replace("https://github.com/", "").rstrip(".git")
-                submodules.append((upstream, top_dir, sub_name, path))
-            current = {}
-        elif "=" in line:
-            k, v = line.split("=", 1)
-            current[k.strip()] = v.strip()
-    # Last entry
-    if current.get("url") and current.get("path"):
-        path = current["path"]
-        top_dir = path.split("/")[0]
-        sub_name = path.split("/", 1)[1] if "/" in path else path
-        upstream = current["url"].replace("https://github.com/", "").rstrip(".git")
-        submodules.append((upstream, top_dir, sub_name, path))
+# Parse .gitmodules from repo
+r = api("GET", f"/repos/{OWNER}/{REPO}/contents/.gitmodules")
+import base64
+gm_content = base64.b64decode(r["content"]).decode("utf-8")
+
+submodules = []
+current = {}
+for line in gm_content.split("\n"):
+    line = line.strip()
+    if line.startswith("[submodule"):
+        if current.get("url") and current.get("path"):
+            path = current["path"]
+            top_dir = path.split("/")[0]
+            upstream = current["url"].replace("https://github.com/", "").rstrip(".git")
+            submodules.append((upstream, top_dir, path))
+        current = {}
+    elif "=" in line:
+        k, v = line.split("=", 1)
+        current[k.strip()] = v.strip()
+if current.get("url") and current.get("path"):
+    path = current["path"]
+    top_dir = path.split("/")[0]
+    upstream = current["url"].replace("https://github.com/", "").rstrip(".git")
+    submodules.append((upstream, top_dir, path))
 
 print(f"Found {len(submodules)} submodules")
 
@@ -68,28 +69,24 @@ tree_sha = r["tree"]["sha"]
 r = api("GET", f"/repos/{OWNER}/{REPO}/git/trees/{tree_sha}")
 
 old_subtrees = {}
-root_files = {}
 for item in r["tree"]:
     if item["mode"] == "040000":
         old_subtrees[item["path"]] = item["sha"]
-    else:
-        root_files[item["path"]] = item
 
-# Fetch upstream SHAs and update subtrees
+# Fetch upstream SHAs and update
 updated = 0
 new_subtree_shas = {}
 
-for upstream, top_dir, sub_name, full_path in submodules:
+for upstream, top_dir, full_path in submodules:
     new_sha = get_upstream_sha(upstream)
     if not new_sha:
-        print(f"  SKIP: {upstream} (cannot fetch)")
+        print(f"  SKIP: {upstream}")
         if top_dir in old_subtrees:
             new_subtree_shas[top_dir] = old_subtrees[top_dir]
         continue
 
     sub_tree_sha = old_subtrees.get(top_dir)
     if not sub_tree_sha:
-        print(f"  SKIP: {top_dir} (not in repo)")
         continue
 
     r = api("GET", f"/repos/{OWNER}/{REPO}/git/trees/{sub_tree_sha}")
@@ -121,10 +118,6 @@ if updated == 0:
 
 # Build new root tree
 root_entries = []
-for item in r.get("tree", []):
-    # Re-read tree for root entries
-    pass
-
 r = api("GET", f"/repos/{OWNER}/{REPO}/git/trees/{tree_sha}")
 for item in r["tree"]:
     if item["mode"] == "040000" and item["path"] in new_subtree_shas:
@@ -132,19 +125,18 @@ for item in r["tree"]:
     elif item["mode"] != "040000":
         root_entries.append(item)
 
-r = api("POST", f"/repos/{OWNER}/{REPO}/git/trees", {"tree": root_entries})
-new_tree_sha = r.get("sha")
-
-r = api("POST", f"/repos/{OWNER}/{REPO}/git/commits", {
-    "message": f"chore: sync {updated} submodules with upstream [skip ci]",
-    "tree": new_tree_sha,
+new_tree = api("POST", f"/repos/{OWNER}/{REPO}/git/trees", {"tree": root_entries})
+new_commit = api("POST", f"/repos/{OWNER}/{REPO}/git/commits", {
+    "message": f"chore: sync {updated} submodules with upstream",
+    "tree": new_tree["sha"],
     "parents": [main_sha]
 })
-new_commit = r.get("sha")
 
-r = api("PATCH", f"/repos/{OWNER}/{REPO}/git/refs/heads/main", {"sha": new_commit})
-if r.get("object", {}).get("sha") == new_commit:
-    print(f"Pushed commit {new_commit[:10]}: synced {updated} submodules")
+commit_sha = new_commit["sha"]
+r = api("PATCH", f"/repos/{OWNER}/{REPO}/git/refs/heads/main", {"sha": commit_sha})
+result_sha = r.get("object", {}).get("sha", "")
+if result_sha == commit_sha:
+    print(f"DONE! Synced {updated} submodules. Commit: {commit_sha[:10]}")
 else:
-    print(f"ERROR: {json.dumps(r)[:300]}")
-    sys.exit(1)
+    err_msg = r.get("message", json.dumps(r)[:200])
+    print(f"ERROR updating ref: {err_msg}")
