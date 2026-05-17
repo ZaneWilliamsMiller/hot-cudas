@@ -150,3 +150,6 @@
 [submodule "tensorrtx"]
 	path = tensorrtx/tensorrtx
 	url = https://github.com/wang-xinyu/tensorrtx.git
+[submodule "lmdeploy"]
+	path = lmdeploy/lmdeploy
+	url = https://github.com/InternLM/lmdeploy.git
