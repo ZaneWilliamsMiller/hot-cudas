@@ -144,3 +144,6 @@
 [submodule "vid2vid"]
 	path = vid2vid/vid2vid
 	url = https://github.com/NVIDIA/vid2vid.git
+[submodule "jetson-inference"]
+	path = jetson-inference/jetson-inference
+	url = https://github.com/dusty-nv/jetson-inference.git
