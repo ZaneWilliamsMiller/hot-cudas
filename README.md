@@ -139,6 +139,3 @@ ZLUDA
 2026 ── cuDF v26.06, PyTorch v2.13, TVM v0.25, TensorRT 10.16/11.0
 ```
 
-> 📁 本地深度分析报告在 `E:\Cuda_Program\` 各子目录下，文件名 `*_analysis_report.md`
-> 
-> ⚠️ 后续将持续增加新项目，欢迎提 Issue 推荐！
