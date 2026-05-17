@@ -1,12 +1,15 @@
 # 🔥 Hot CUDAs — CUDA/GPU 开源项目知识库
 
-> 自动整理 2026-05-17 | 39 个热门项目 | 深度源码分析 · Git Submodules · 持续更新
+> 自动整理 2026-05-18 | 41 个热门项目 | 深度源码分析 · Git Submodules · 持续更新
 
 ## 📦 使用方式
 
 ```bash
-# 克隆含所有子模块
+# 克隆含所有子模块（锁定版本）
 git clone --recurse-submodules https://github.com/ZaneWilliamsMiller/hot_cudas.git
+
+# 克隆最新版本（dev 分支每日同步上游）
+git clone --recurse-submodules -b dev https://github.com/ZaneWilliamsMiller/hot_cudas.git
 
 # 已克隆后初始化子模块
 git submodule update --init --recursive
@@ -39,9 +42,9 @@ git submodule update --remote
 | 18 | **Taskflow** | 12k | `taskflow/taskflow` | [Taskflow](https://github.com/taskflow/taskflow) |
 | 19 | **HVM2** | 11k | `hvm2/HVM2` | [HVM2](https://github.com/HigherOrderCO/HVM2) |
 | 20 | **LeetCUDA** | 11k | `leetcuda/LeetCUDA` | [LeetCUDA](https://github.com/xlite-dev/LeetCUDA) |
-| 21 | **cuDF** | 10k | `cudf/cudf` | [cuDF](https://github.com/rapidsai/cudf) |
-| 22 | **CUTLASS** | 10k | `cutlass/cutlass` | [CUTLASS](https://github.com/NVIDIA/cutlass) |
-| 23 | **CuPy** | 11k | `cupy/cupy` | [CuPy](https://github.com/cupy/cupy) |
+| 21 | **CuPy** | 11k | `cupy/cupy` | [CuPy](https://github.com/cupy/cupy) |
+| 22 | **cuDF** | 10k | `cudf/cudf` | [cuDF](https://github.com/rapidsai/cudf) |
+| 23 | **CUTLASS** | 10k | `cutlass/cutlass` | [CUTLASS](https://github.com/NVIDIA/cutlass) |
 | 24 | **DeepEP** | 10k | `deepep/DeepEP` | [DeepEP](https://github.com/deepseek-ai/DeepEP) |
 | 25 | **Apex** | 9k | `apex/apex` | [Apex](https://github.com/NVIDIA/apex) |
 | 26 | **cuda-samples** | 9k | `cuda-samples/cuda-samples` | [cuda-samples](https://github.com/NVIDIA/cuda-samples) |
@@ -66,19 +69,19 @@ git submodule update --remote
 ## 🗂️ 按领域分类
 
 ### 🔧 GPU 内核 & 算子
-CUTLASS · FlashAttention · GPU-Puzzles · Taskflow · HVM2 · CuPy · OneFlow · DeepEP · cuda-samples · LeetCUDA · RAFT
+CUTLASS · FlashAttention · GPU-Puzzles · Taskflow · HVM2 · CuPy · OneFlow · DeepEP · DeepGEMM · cuda-samples · LeetCUDA · RAFT
 
 ### 🚀 推理引擎
-vLLM · SGLang · RTP-LLM · Chitu · DeepGEMM · FasterTransformer · TensorRT-LLM · TensorRT
+vLLM · SGLang · TensorRT-LLM · LMDeploy · RTP-LLM · Chitu · FasterTransformer · TensorRT
 
 ### 💾 缓存 & 存储
 LMCache
 
 ### 📡 通信
-UCC
+UCC · DeepEP (MoE EP)
 
 ### 🏋️ 分布式训练
-DeepSpeed · Megatron-LM · Apex · llm.c · Horovod
+DeepSpeed · Megatron-LM · GPT-NeoX · Apex · llm.c · Horovod
 
 ### 🔬 编译 & 模拟
 TileLang · Warp · TVM
@@ -87,13 +90,16 @@ TileLang · Warp · TVM
 PyTorch · Deeplearning4J
 
 ### 🎨 神经图形学 & 3D
-Instant-NGP · Open3D
+Instant-NGP · Open3D · vid2vid
 
 ### 📚 参考实现
-DeepLearningExamples
+DeepLearningExamples · tensorrtx · jetson-inference
 
 ### 🔀 GPU 兼容层
 ZLUDA
+
+### 📊 数据处理
+cuDF
 
 ---
 
@@ -102,9 +108,12 @@ ZLUDA
 ```
 训练栈:    llm.c ─── Apex ─── DeepSpeed / Megatron-LM
                │         │     └── Horovod (Ring-AllReduce)
+               │         └── GPT-NeoX (Megatron+DeepSpeed+MoE/RWKV/Mamba)
                └──── 内核层: CUTLASS + FlashAttention
                               │
 推理栈:    FasterTransformer ──→ TensorRT ──→ TensorRT-LLM ── vLLM/SGLang
+               ↓                   │
+          tensorrtx (TRT参考实现)   └── LMDeploy (TurboMind+PyTorch双引擎)
                ↓
           vLLM ←──→ SGLang ←── RTP-LLM ←── Chitu (国产GPU推理)
                │         │
@@ -117,13 +126,16 @@ ZLUDA
            DL4J (JVM 深度学习全栈/SameDiff/ND4J)
 编译层:    TileLang ─── TVM ─── CuTeDSL (CUTLASS)
 图形层:    Instant-NGP (NeRF/SDF/Hash Encoding) + Open3D (3D全栈)
+           vid2vid (视频翻译/FlowNet2/CUDA内核)
+边缘层:    jetson-inference (Jetson/TensorRT/C++推理)
 兼容层:    ZLUDA (CUDA→AMD GPU)
 编排层:    Taskflow (DAG调度/CUDA Graph/Pipeline)
 计算层:    HVM2 (Interaction Combinators GPU并行)
-数值层:    CuPy (NumPy/SciPy GPU)
+数值层:    CuPy (NumPy/SciPy GPU) · cuDF (DataFrame GPU)
 模拟层:    Warp (独立)
 教学:     GPU-Puzzles (入门) ──→ LeetCUDA (实战) ──→ cuda-samples (官方)
-参考:     DeepLearningExamples (50+ SOTA模型)
+参考:     DeepLearningExamples (50+ SOTA模型) · tensorrtx (57模型TRT实现)
+内核:     DeepGEMM (FP8/FP4 GEMM + MoE Mega-Kernel)
 ```
 
 ---
@@ -133,14 +145,13 @@ ZLUDA
 ```
 2015 ── Deeplearning4J (JVM深度学习)
 2017 ── TVM (ML编译器, Apache孵化)
-2018 ── Horovod, FasterTransformer, DeepLearningExamples, Open3D, Taskflow
-2019 ── Apex (AMP 混合精度)
-2020 ── DeepSpeed (ZeRO), Megatron-LM (TP/PP), ZLUDA (CUDA兼容层)
-2021 ── CUTLASS 2.x (Ampere), UCC (统一通信)
-2022 ── FlashAttention FA1/FA2, vLLM, Instant-NGP, GPU-Puzzles, HVM2
-2023 ── SGLang, RTP-LLM
-2024 ── CUTLASS 4.x, FA3, LeetCUDA, DeepEP, DeepGEMM
-2025 ── FA4, llm.c, TileLang, LMCache dev, Chitu
+2018 ── Horovod, FasterTransformer, DeepLearningExamples, Open3D, Taskflow, vid2vid
+2019 ── Apex (AMP 混合精度), jetson-inference
+2020 ── DeepSpeed (ZeRO), Megatron-LM (TP/PP), ZLUDA (CUDA兼容层), GPT-NeoX
+2021 ── CUTLASS 2.x (Ampere), UCC (统一通信), tensorrtx
+2022 ── FlashAttention FA1/FA2, vLLM, Instant-NGP, GPU-Puzzles, HVM2, DeepGEMM
+2023 ── SGLang, RTP-LLM, LMDeploy
+2024 ── CUTLASS 4.x, FA3, LeetCUDA, DeepEP, Chitu
+2025 ── FA4, llm.c, TileLang, LMCache dev
 2026 ── cuDF v26.06, PyTorch v2.13, TVM v0.25, TensorRT 10.16/11.0
 ```
-
