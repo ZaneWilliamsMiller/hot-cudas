@@ -147,3 +147,6 @@
 [submodule "jetson-inference"]
 	path = jetson-inference/jetson-inference
 	url = https://github.com/dusty-nv/jetson-inference.git
+[submodule "tensorrtx"]
+	path = tensorrtx/tensorrtx
+	url = https://github.com/wang-xinyu/tensorrtx.git
