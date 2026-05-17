@@ -141,3 +141,6 @@
 [submodule "ucc"]
 	path = ucc/ucc
 	url = https://github.com/openucx/ucc.git
+[submodule "vid2vid"]
+	path = vid2vid/vid2vid
+	url = https://github.com/NVIDIA/vid2vid.git
