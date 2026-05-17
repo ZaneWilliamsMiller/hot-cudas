@@ -71,7 +71,9 @@ for line in gm_content.split("\n"):
         if current.get("url") and current.get("path"):
             path = current["path"]
             top_dir = path.split("/")[0]
-            upstream = current["url"].replace("https://github.com/", "").rstrip(".git")
+            upstream = current["url"].replace("https://github.com/", "")
+            if upstream.endswith(".git"):
+                upstream = upstream[:-4]
             submodules.append((upstream, top_dir, path))
         current = {}
     elif "=" in line:
@@ -81,7 +83,9 @@ for line in gm_content.split("\n"):
 if current.get("url") and current.get("path"):
     path = current["path"]
     top_dir = path.split("/")[0]
-    upstream = current["url"].replace("https://github.com/", "").rstrip(".git")
+    upstream = current["url"].replace("https://github.com/", "")
+    if upstream.endswith(".git"):
+        upstream = upstream[:-4]
     submodules.append((upstream, top_dir, path))
 
 print(f"Found {len(submodules)} submodules")
