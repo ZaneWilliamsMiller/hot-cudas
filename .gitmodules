@@ -153,3 +153,6 @@
 [submodule "lmdeploy"]
 	path = lmdeploy/lmdeploy
 	url = https://github.com/InternLM/lmdeploy.git
+[submodule "gpt-neox"]
+	path = gpt-neox/gpt-neox
+	url = https://github.com/EleutherAI/gpt-neox.git
