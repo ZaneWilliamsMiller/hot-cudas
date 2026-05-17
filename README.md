@@ -43,6 +43,7 @@ git submodule update --remote
 | 22 | **cuDF** | 10k | `cudf/` | [rapidsai/cudf](https://github.com/rapidsai/cudf) |
 | 23 | **CUTLASS** | 10k | `cutlass/` | [NVIDIA/cutlass](https://github.com/NVIDIA/cutlass) |
 | 24 | **DeepEP** | 10k | `deepep/` | [deepseek-ai/DeepEP](https://github.com/deepseek-ai/DeepEP) |
+| # | **LMDeploy** | 7.9k | lmdeploy/lmdeploy | [GitHub](https://github.com/InternLM/lmdeploy) |
 | 25 | **Apex** | 9k | `apex/` | [NVIDIA/apex](https://github.com/NVIDIA/apex) |
 | 26 | **cuda-samples** | 9k | `cuda-samples/` | [NVIDIA/cuda-samples](https://github.com/NVIDIA/cuda-samples) |
 | 27 | **OneFlow** | 9k | `oneflow/` | [Oneflow-Inc/oneflow](https://github.com/Oneflow-Inc/oneflow) |
