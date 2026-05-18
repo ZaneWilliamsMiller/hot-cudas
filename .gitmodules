@@ -222,3 +222,7 @@
 [submodule "pytorch-yolov4"]
 	path = pytorch-yolov4/pytorch-YOLOv4
 	url = https://github.com/Tianxiaomo/pytorch-YOLOv4
+
+[submodule "hrnet"]
+	path = hrnet/deep-high-resolution-net.pytorch
+	url = https://github.com/leoxiaobin/deep-high-resolution-net.pytorch
