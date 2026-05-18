@@ -196,3 +196,6 @@
 [submodule "rust-cuda"]
 	path = rust-cuda/rust-cuda
 	url = https://github.com/Rust-GPU/rust-cuda.git
+[submodule "deep-painterly-harmonization"]
+	path = deep-painterly-harmonization/deep-painterly-harmonization
+	url = https://github.com/luanfujun/deep-painterly-harmonization.git
