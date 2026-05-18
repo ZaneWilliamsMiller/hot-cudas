@@ -1,6 +1,6 @@
 # 🔥 Hot CUDAs — CUDA/GPU 开源项目知识库
 
-> 自动整理 2026-05-18 | 72 个热门项目 | 深度源码分析 · Git Submodules · 持续更新
+> 自动整理 2026-05-18 | 73 个热门项目 | 深度源码分析 · Git Submodules · 持续更新
 
 ## 📦 使用方式
 
@@ -78,22 +78,23 @@ git submodule update --remote
 | 61 | **LightSeq** | 3.3k | `lightseq/lightseq` | [bytedance/lightseq](https://github.com/bytedance/lightseq) |
 | 62 | **FlowNet2-PyTorch** | 3.3k | `flownet2-pytorch/flownet2-pytorch` | [NVIDIA/flownet2-pytorch](https://github.com/NVIDIA/flownet2-pytorch) |
 | 63 | **LYGIA** | 3.3k | `lygia/lygia` | [patriciogonzalezvivo/lygia](https://github.com/patriciogonzalezvivo/lygia) |
+| 64 | **Jittor** | 3.2k | `jittor/jittor` | [Jittor/jittor](https://github.com/Jittor/jittor) |
 | 52 | **torch2trt** | 4.9k | `torch2trt/torch2trt` | [NVIDIA-AI-IOT/torch2trt](https://github.com/NVIDIA-AI-IOT/torch2trt) |
 | 52 | **ArrayFire** | 4.9k | `arrayfire/arrayfire` | [arrayfire/arrayfire](https://github.com/arrayfire/arrayfire) |
 | 53 | **AITemplate** | 4.7k | `aitemplate/aitemplate` | [facebookincubator/AITemplate](https://github.com/facebookincubator/AITemplate) |
 | 54 | **pytorch-YOLOv4** | 4.5k | `pytorch-yolov4/pytorch-YOLOv4` | [Tianxiaomo/pytorch-YOLOv4](https://github.com/Tianxiaomo/pytorch-YOLOv4) |
 | 47 | **NCCL** | 5k | `nccl/nccl` | [NCCL](https://github.com/NVIDIA/nccl) |
-| 64 | **ExLlamaV2 (exllamav2)** | 4.5k | `exllamav2/exllamav2` | [turboderp-org/exllamav2](https://github.com/turboderp-org/exllamav2) |
-| 65 | **HRNet (deep-high-resolution-net.pytorch)** | 4.5k | `hrnet/deep-high-resolution-net.pytorch` | [leoxiaobin/deep-high-resolution-net.pytorch](https://github.com/leoxiaobin/deep-high-resolution-net.pytorch) |
+| 65 | **ExLlamaV2 (exllamav2)** | 4.5k | `exllamav2/exllamav2` | [turboderp-org/exllamav2](https://github.com/turboderp-org/exllamav2) |
+| 66 | **HRNet (deep-high-resolution-net.pytorch)** | 4.5k | `hrnet/deep-high-resolution-net.pytorch` | [leoxiaobin/deep-high-resolution-net.pytorch](https://github.com/leoxiaobin/deep-high-resolution-net.pytorch) |
 | 48 | **Rust CUDA** | 5k | `rust-cuda/rust-cuda` | [Rust CUDA](https://github.com/Rust-GPU/rust-cuda) |
-| 65 | **Thrust** | 5k | `thrust/thrust` | [Thrust](https://github.com/NVIDIA/thrust) |
-| 66 | **cuML** | 5k | `cuml/cuml` | [cuML](https://github.com/rapidsai/cuml) |
-| 67 | **Chitu** | 3k | `chitu/chitu` | [Chitu](https://github.com/thu-pacman/chitu) |
-| 68 | **CCCL** | 2k | `cccl/cccl` | [CCCL](https://github.com/NVIDIA/cccl) |
-| 69 | **PyCUDA** | 2k | `pycuda/pycuda` | [PyCUDA](https://github.com/inducer/pycuda) |
-| 70 | **RAFT** | 1k | `raft/raft` | [RAFT](https://github.com/rapidsai/raft) |
-| 71 | **RTP-LLM** | 1k | `rtp-llm/rtp-llm` | [RTP-LLM](https://github.com/alibaba/rtp-llm) |
-| 72 | **UCC** | 307 | `ucc/ucc` | [UCC](https://github.com/openucx/ucc) |
+| 66 | **Thrust** | 5k | `thrust/thrust` | [Thrust](https://github.com/NVIDIA/thrust) |
+| 67 | **cuML** | 5k | `cuml/cuml` | [cuML](https://github.com/rapidsai/cuml) |
+| 68 | **Chitu** | 3k | `chitu/chitu` | [Chitu](https://github.com/thu-pacman/chitu) |
+| 69 | **CCCL** | 2k | `cccl/cccl` | [CCCL](https://github.com/NVIDIA/cccl) |
+| 70 | **PyCUDA** | 2k | `pycuda/pycuda` | [PyCUDA](https://github.com/inducer/pycuda) |
+| 71 | **RAFT** | 1k | `raft/raft` | [RAFT](https://github.com/rapidsai/raft) |
+| 72 | **RTP-LLM** | 1k | `rtp-llm/rtp-llm` | [RTP-LLM](https://github.com/alibaba/rtp-llm) |
+| 73 | **UCC** | 307 | `ucc/ucc` | [UCC](https://github.com/openucx/ucc) |
 
 ---
 
