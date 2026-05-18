@@ -1,15 +1,15 @@
 # 🔥 Hot CUDAs — CUDA/GPU 开源项目知识库
 
-> 自动整理 2026-05-18 | 45 个热门项目 | 深度源码分析 · Git Submodules · 持续更新
+> 自动整理 2026-05-18 | 47 个热门项目 | 深度源码分析 · Git Submodules · 持续更新
 
 ## 📦 使用方式
 
 ```bash
 # 克隆含所有子模块（锁定版本）
-git clone --recurse-submodules https://github.com/ZaneWilliamsMiller/hot_cudas.git
+git clone --recurse-submodules https://github.com/ZaneWilliamsMiller/hot-cudas.git
 
 # 克隆最新版本（dev 分支每日同步上游）
-git clone --recurse-submodules -b dev https://github.com/ZaneWilliamsMiller/hot_cudas.git
+git clone --recurse-submodules -b dev https://github.com/ZaneWilliamsMiller/hot-cudas.git
 
 # 已克隆后初始化子模块
 git submodule update --init --recursive
@@ -63,17 +63,19 @@ git submodule update --remote
 | 39 | **ethminer** | 6k | `ethminer/ethminer` | [ethminer](https://github.com/ethereum-mining/ethminer) |
 | 40 | **Chainer** | 6k | `chainer/chainer` | [Chainer](https://github.com/chainer/chainer) |
 | 41 | **NCCL** | 5k | `nccl/nccl` | [NCCL](https://github.com/NVIDIA/nccl) |
-| 42 | **Chitu** | 3k | `chitu/chitu` | [Chitu](https://github.com/thu-pacman/chitu) |
-| 43 | **RTP-LLM** | 1k | `rtp-llm/rtp-llm` | [RTP-LLM](https://github.com/alibaba/rtp-llm) |
-| 44 | **RAFT** | 1k | `raft/raft` | [RAFT](https://github.com/rapidsai/raft) |
-| 45 | **UCC** | 307 | `ucc/ucc` | [UCC](https://github.com/openucx/ucc) |
+| 42 | **Thrust** | 5k | `thrust/thrust` | [Thrust](https://github.com/NVIDIA/thrust) |
+| 43 | **Chitu** | 3k | `chitu/chitu` | [Chitu](https://github.com/thu-pacman/chitu) |
+| 44 | **RTP-LLM** | 1k | `rtp-llm/rtp-llm` | [RTP-LLM](https://github.com/alibaba/rtp-llm) |
+| 45 | **RAFT** | 1k | `raft/raft` | [RAFT](https://github.com/rapidsai/raft) |
+| 46 | **CCCL** | 2k | `cccl/cccl` | [CCCL](https://github.com/NVIDIA/cccl) |
+| 47 | **UCC** | 307 | `ucc/ucc` | [UCC](https://github.com/openucx/ucc) |
 
 ---
 
 ## 🗂️ 按领域分类
 
 ### 🔧 GPU 内核 & 算子
-CUTLASS · FlashAttention · GPU-Puzzles · Taskflow · HVM2 · CuPy · OneFlow · DeepEP · DeepGEMM · cuda-samples · LeetCUDA · RAFT
+CUTLASS · FlashAttention · GPU-Puzzles · Taskflow · HVM2 · CuPy · OneFlow · DeepEP · DeepGEMM · cuda-samples · LeetCUDA · RAFT · Thrust · CCCL
 
 ### 🚀 推理引擎
 vLLM · SGLang · TensorRT-LLM · LMDeploy · RTP-LLM · Chitu · FasterTransformer · TensorRT
@@ -131,7 +133,8 @@ cuDF
                │
 通信层:    NCCL (GPU集合通信标准) + UCC (统一通信) + DeepEP (MoE EP)
                │
-基础库:    RAFT ─── RAPIDS 底层 (cuML/cuGraph/cuVS 公共原语)
+基础库:    CCCL (Thrust+CUB+libcudacxx) ←── Thrust (归档, 并行算法, 启发C++17)
+           RAFT ─── RAPIDS 底层 (cuML/cuGraph/cuVS 公共原语)
 视觉层:    GoCV (Go+OpenCV+CUDA+OpenVINO, 单二进制部署)
 框架层:    PyTorch (Dynamo/Inductor/FSDP/DTensor/Export) ←── Chainer (define-by-run先驱,CuPy母项目)
            DL4J (JVM 深度学习全栈/SameDiff/ND4J)
@@ -155,15 +158,16 @@ cuDF
 ## 📈 项目演进时序
 
 ```
-2015 ── Chainer (define-by-run首创), Deeplearning4J (JVM深度学习), ethminer (Ethash GPU挖矿), NCCL (GPU集合通信)
-2017 ── TVM (ML编译器, Apache孵化), GoCV (Go+OpenCV), CuPy (从Chainer分离独立)
+2009 ── Thrust (C++并行算法, 启发C++17标准)
+2015 ── Chainer (define-by-run首创), Deeplearning4J, ethminer, NCCL
+2017 ── TVM (ML编译器), GoCV, CuPy (从Chainer分离独立)
 2018 ── Horovod, FasterTransformer, DeepLearningExamples, Open3D, Taskflow, vid2vid
-2019 ── Apex (AMP 混合精度), jetson-inference, Chainer进入维护模式
-2020 ── DeepSpeed (ZeRO), Megatron-LM (TP/PP), ZLUDA (CUDA兼容层), GPT-NeoX
-2021 ── CUTLASS 2.x (Ampere), UCC (统一通信), tensorrtx
-2022 ── FlashAttention FA1/FA2, vLLM, Instant-NGP, GPU-Puzzles, HVM2, DeepGEMM
-2023 ── SGLang, RTP-LLM, LMDeploy
-2024 ── CUTLASS 4.x, FA3, LeetCUDA, DeepEP, Chitu
-2025 ── FA4, llm.c, TileLang, LMCache dev
+2019 ── Apex, jetson-inference, Chainer进入维护模式
+2020 ── DeepSpeed, Megatron-LM, ZLUDA, GPT-NeoX
+2021 ── CUTLASS 2.x, UCC, tensorrtx
+2022 ── FlashAttention, vLLM, Instant-NGP, GPU-Puzzles, HVM2, DeepGEMM
+2023 ── CCCL (Thrust+CUB+libcudacxx合并), SGLang, RTP-LLM, LMDeploy, Thrust归档
+2024 ── CUTLASS 4.x, FA3/FA4, LeetCUDA, DeepEP, Chitu
+2025 ── llm.c, TileLang, LMCache dev, CCCL v3.5
 2026 ── cuDF v26.06, PyTorch v2.13, TVM v0.25, TensorRT 10.16/11.0
 ```
