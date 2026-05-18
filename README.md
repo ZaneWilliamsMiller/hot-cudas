@@ -1,6 +1,6 @@
 # 🔥 Hot CUDAs — CUDA/GPU 开源项目知识库
 
-> 自动整理 2026-05-18 | 57 个热门项目 | 深度源码分析 · Git Submodules · 持续更新
+> 自动整理 2026-05-18 | 58 个热门项目 | 深度源码分析 · Git Submodules · 持续更新
 
 ## 📦 使用方式
 
@@ -69,16 +69,17 @@ git submodule update --remote
 | 45 | **ALIEN** | 5k | `alien/alien` | [ALIEN](https://github.com/chrxh/alien) |
 | 46 | **Kaolin** | 5k | `kaolin/kaolin` | [Kaolin](https://github.com/NVIDIAGameWorks/kaolin) |
 | 50 | **Blitzar** | 4.9k | `blitzar/blitzar` | [spaceandtimefdn/blitzar](https://github.com/spaceandtimefdn/blitzar) |
+| 51 | **ArrayFire** | 4.9k | `arrayfire/arrayfire` | [arrayfire/arrayfire](https://github.com/arrayfire/arrayfire) |
 | 47 | **NCCL** | 5k | `nccl/nccl` | [NCCL](https://github.com/NVIDIA/nccl) |
 | 48 | **Rust CUDA** | 5k | `rust-cuda/rust-cuda` | [Rust CUDA](https://github.com/Rust-GPU/rust-cuda) |
-| 50 | **Thrust** | 5k | `thrust/thrust` | [Thrust](https://github.com/NVIDIA/thrust) |
-| 51 | **cuML** | 5k | `cuml/cuml` | [cuML](https://github.com/rapidsai/cuml) |
-| 52 | **Chitu** | 3k | `chitu/chitu` | [Chitu](https://github.com/thu-pacman/chitu) |
-| 53 | **CCCL** | 2k | `cccl/cccl` | [CCCL](https://github.com/NVIDIA/cccl) |
-| 54 | **PyCUDA** | 2k | `pycuda/pycuda` | [PyCUDA](https://github.com/inducer/pycuda) |
-| 55 | **RAFT** | 1k | `raft/raft` | [RAFT](https://github.com/rapidsai/raft) |
-| 56 | **RTP-LLM** | 1k | `rtp-llm/rtp-llm` | [RTP-LLM](https://github.com/alibaba/rtp-llm) |
-| 57 | **UCC** | 307 | `ucc/ucc` | [UCC](https://github.com/openucx/ucc) |
+| 51 | **Thrust** | 5k | `thrust/thrust` | [Thrust](https://github.com/NVIDIA/thrust) |
+| 52 | **cuML** | 5k | `cuml/cuml` | [cuML](https://github.com/rapidsai/cuml) |
+| 53 | **Chitu** | 3k | `chitu/chitu` | [Chitu](https://github.com/thu-pacman/chitu) |
+| 54 | **CCCL** | 2k | `cccl/cccl` | [CCCL](https://github.com/NVIDIA/cccl) |
+| 55 | **PyCUDA** | 2k | `pycuda/pycuda` | [PyCUDA](https://github.com/inducer/pycuda) |
+| 56 | **RAFT** | 1k | `raft/raft` | [RAFT](https://github.com/rapidsai/raft) |
+| 57 | **RTP-LLM** | 1k | `rtp-llm/rtp-llm` | [RTP-LLM](https://github.com/alibaba/rtp-llm) |
+| 58 | **UCC** | 307 | `ucc/ucc` | [UCC](https://github.com/openucx/ucc) |
 
 ---
 
@@ -172,6 +173,7 @@ cuDF · DALI · cuML
 
 ```
 2009 ── Thrust (C++并行算法, 启发C++17标准), PyCUDA (Python CUDA桥梁)
+2013 ── ArrayFire
 2015 ── Chainer (define-by-run首创), Deeplearning4J, ethminer, NCCL
 2017 ── DALI, TVM (ML编译器), GoCV, CuPy (从Chainer分离独立)
 2018 ── ALIEN, cuML, Deep Painterly, Horovod, FasterTransformer, DeepLearningExamples, Open3D, Taskflow, vid2vid
