@@ -1,6 +1,6 @@
 # 🔥 Hot CUDAs — CUDA/GPU 开源项目知识库
 
-> 自动整理 2026-05-18 | 50 个热门项目 | 深度源码分析 · Git Submodules · 持续更新
+> 自动整理 2026-05-18 | 51 个热门项目 | 深度源码分析 · Git Submodules · 持续更新
 
 ## 📦 使用方式
 
@@ -43,7 +43,7 @@ git submodule update --remote
 | 19 | **HVM2** | 11k | `hvm2/HVM2` | [HVM2](https://github.com/HigherOrderCO/HVM2) |
 | 20 | **LeetCUDA** | 11k | `leetcuda/LeetCUDA` | [LeetCUDA](https://github.com/xlite-dev/LeetCUDA) |
 | 21 | **CuPy** | 11k | `cupy/cupy` | [CuPy](https://github.com/cupy/cupy) |
-| 22 | **cuDF** | 10k | `cudf/cudf` | [cuDF](https://github.com/rapidsai/cudf) |
+| 22 | **cuDF · DALI** | 10k | `cudf/cudf` | [cuDF · DALI](https://github.com/rapidsai/cudf) |
 | 23 | **CUTLASS** | 10k | `cutlass/cutlass` | [CUTLASS](https://github.com/NVIDIA/cutlass) |
 | 24 | **DeepEP** | 10k | `deepep/DeepEP` | [DeepEP](https://github.com/deepseek-ai/DeepEP) |
 | 25 | **Apex** | 9k | `apex/apex` | [Apex](https://github.com/NVIDIA/apex) |
@@ -62,16 +62,16 @@ git submodule update --remote
 | 38 | **TileLang** | 6k | `tilelang/tilelang` | [TileLang](https://github.com/tile-ai/tilelang) |
 | 39 | **ethminer** | 6k | `ethminer/ethminer` | [ethminer](https://github.com/ethereum-mining/ethminer) |
 | 40 | **GPU MODE Lectures** | 6k | `lectures/lectures` | [GPU MODE Lectures](https://github.com/gpu-mode/lectures) |
-| 50 | **Chainer** | 6k | `chainer/chainer` | [Chainer](https://github.com/chainer/chainer) |
-| 50 | **NCCL** | 5k | `nccl/nccl` | [NCCL](https://github.com/NVIDIA/nccl) |
-| 50 | **Thrust** | 5k | `thrust/thrust` | [Thrust](https://github.com/NVIDIA/thrust) |
-| 50 | **FlashInfer** | 6k | `flashinfer/flashinfer` | [FlashInfer](https://github.com/flashinfer-ai/flashinfer) |
-| 50 | **Chitu** | 3k | `chitu/chitu` | [Chitu](https://github.com/thu-pacman/chitu) |
-| 50 | **RTP-LLM** | 1k | `rtp-llm/rtp-llm` | [RTP-LLM](https://github.com/alibaba/rtp-llm) |
-| 50 | **RAFT** | 1k | `raft/raft` | [RAFT](https://github.com/rapidsai/raft) |
-| 50 | **CCCL** | 2k | `cccl/cccl` | [CCCL](https://github.com/NVIDIA/cccl) |
-| 50 | **PyCUDA** | 2k | `pycuda/pycuda` | [PyCUDA](https://github.com/inducer/pycuda) |
-| 50 | **UCC** | 307 | `ucc/ucc` | [UCC](https://github.com/openucx/ucc) |
+| 51 | **Chainer** | 6k | `chainer/chainer` | [Chainer](https://github.com/chainer/chainer) |
+| 51 | **NCCL** | 5k | `nccl/nccl` | [NCCL](https://github.com/NVIDIA/nccl) |
+| 51 | **Thrust** | 5k | `thrust/thrust` | [Thrust](https://github.com/NVIDIA/thrust) |
+| 51 | **FlashInfer** | 6k | `flashinfer/flashinfer` | [FlashInfer](https://github.com/flashinfer-ai/flashinfer) |
+| 51 | **Chitu** | 3k | `chitu/chitu` | [Chitu](https://github.com/thu-pacman/chitu) |
+| 51 | **RTP-LLM** | 1k | `rtp-llm/rtp-llm` | [RTP-LLM](https://github.com/alibaba/rtp-llm) |
+| 51 | **RAFT** | 1k | `raft/raft` | [RAFT](https://github.com/rapidsai/raft) |
+| 51 | **CCCL** | 2k | `cccl/cccl` | [CCCL](https://github.com/NVIDIA/cccl) |
+| 51 | **PyCUDA** | 2k | `pycuda/pycuda` | [PyCUDA](https://github.com/inducer/pycuda) |
+| 51 | **UCC** | 307 | `ucc/ucc` | [UCC](https://github.com/openucx/ucc) |
 
 ---
 
@@ -114,7 +114,7 @@ DeepLearningExamples · tensorrtx · jetson-inference
 ZLUDA
 
 ### 📊 数据处理
-cuDF
+cuDF · DALI
 
 ---
 
@@ -149,7 +149,7 @@ cuDF
 兼容层:    ZLUDA (CUDA→AMD GPU)
 编排层:    Taskflow (DAG调度/CUDA Graph/Pipeline)
 计算层:    HVM2 (Interaction Combinators GPU并行)
-数值层:    CuPy (NumPy/SciPy GPU, 源自Chainer) · cuDF (DataFrame GPU)
+数值层:    CuPy (NumPy/SciPy GPU, 源自Chainer) · cuDF · DALI (DataFrame GPU)
 模拟层:    Warp (独立)
 历史层:    ethminer (Ethash GPU挖矿, SHFL+DAG, 已归档)
 教学:     GPU-Puzzles · GPU MODE Lectures (34讲全栈) (入门) ──→ LeetCUDA (实战) ──→ cuda-samples (官方)
@@ -164,7 +164,7 @@ cuDF
 ```
 2009 ── Thrust (C++并行算法, 启发C++17标准), PyCUDA (Python CUDA桥梁)
 2015 ── Chainer (define-by-run首创), Deeplearning4J, ethminer, NCCL
-2017 ── TVM (ML编译器), GoCV, CuPy (从Chainer分离独立)
+2017 ── DALI, TVM (ML编译器), GoCV, CuPy (从Chainer分离独立)
 2018 ── Horovod, FasterTransformer, DeepLearningExamples, Open3D, Taskflow, vid2vid
 2019 ── Apex, jetson-inference, Chainer进入维护模式
 2020 ── DeepSpeed, Megatron-LM, ZLUDA, GPT-NeoX
@@ -173,5 +173,5 @@ cuDF
 2023 ── CCCL (Thrust+CUB+libcudacxx合并), SGLang, RTP-LLM, LMDeploy, Thrust归档, FlashInfer
 2024 ── GPU MODE Lectures, CUTLASS 4.x, FA3/FA4, LeetCUDA, DeepEP, Chitu, FlashInfer MLA/POD
 2025 ── llm.c, TileLang, LMCache dev, CCCL v3.5, FlashInfer FP4/Blackwell
-2026 ── cuDF v26.06, PyTorch v2.13, TVM v0.25, TensorRT 10.16/11.0
+2026 ── cuDF · DALI v26.06, PyTorch v2.13, TVM v0.25, TensorRT 10.16/11.0
 ```
