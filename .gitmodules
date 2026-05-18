@@ -206,3 +206,7 @@
 [submodule "blitzar"]
 	path = blitzar/blitzar
 	url = https://github.com/spaceandtimefdn/blitzar
+
+[submodule "arrayfire"]
+	path = arrayfire/arrayfire
+	url = https://github.com/arrayfire/arrayfire
