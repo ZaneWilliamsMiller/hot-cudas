@@ -258,3 +258,7 @@
 [submodule "lightseq/lightseq"]
 	path = lightseq/lightseq
 	url = https://github.com/bytedance/lightseq
+
+[submodule "flownet2-pytorch/flownet2-pytorch"]
+	path = flownet2-pytorch/flownet2-pytorch
+	url = https://github.com/NVIDIA/flownet2-pytorch
