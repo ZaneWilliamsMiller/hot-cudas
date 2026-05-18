@@ -214,3 +214,7 @@
 [submodule "torch2trt"]
 	path = torch2trt/torch2trt
 	url = https://github.com/NVIDIA-AI-IOT/torch2trt
+
+[submodule "aitemplate"]
+	path = aitemplate/aitemplate
+	url = https://github.com/facebookincubator/AITemplate
