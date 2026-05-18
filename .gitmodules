@@ -238,3 +238,7 @@
 [submodule "lite.ai.toolkit/lite.ai.toolkit"]
 	path = lite.ai.toolkit/lite.ai.toolkit
 	url = https://github.com/xlite-dev/lite.ai.toolkit
+
+[submodule "ctranslate2/ctranslate2"]
+	path = ctranslate2/ctranslate2
+	url = https://github.com/OpenNMT/CTranslate2
