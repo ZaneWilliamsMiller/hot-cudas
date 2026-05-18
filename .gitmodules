@@ -165,3 +165,6 @@
 [submodule "nccl"]
 	path = nccl/nccl
 	url = https://github.com/NVIDIA/nccl.git
+[submodule "chainer"]
+	path = chainer/chainer
+	url = https://github.com/chainer/chainer.git
