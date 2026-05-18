@@ -266,3 +266,7 @@
 [submodule "lygia/lygia"]
 	path = lygia/lygia
 	url = https://github.com/patriciogonzalezvivo/lygia
+
+[submodule "jittor/jittor"]
+	path = jittor/jittor
+	url = https://github.com/Jittor/jittor
