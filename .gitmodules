@@ -254,3 +254,7 @@
 [submodule "StringZilla/StringZilla"]
 	path = StringZilla/StringZilla
 	url = https://github.com/ashvardanian/StringZilla
+
+[submodule "lightseq/lightseq"]
+	path = lightseq/lightseq
+	url = https://github.com/bytedance/lightseq
