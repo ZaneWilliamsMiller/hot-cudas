@@ -270,3 +270,7 @@
 [submodule "jittor/jittor"]
 	path = jittor/jittor
 	url = https://github.com/Jittor/jittor
+
+[submodule "cuda-python/cuda-python"]
+	path = cuda-python/cuda-python
+	url = https://github.com/NVIDIA/cuda-python
