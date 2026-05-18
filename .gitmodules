@@ -210,3 +210,7 @@
 [submodule "arrayfire"]
 	path = arrayfire/arrayfire
 	url = https://github.com/arrayfire/arrayfire
+
+[submodule "torch2trt"]
+	path = torch2trt/torch2trt
+	url = https://github.com/NVIDIA-AI-IOT/torch2trt
