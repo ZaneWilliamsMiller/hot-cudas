@@ -202,3 +202,7 @@
 [submodule "kaolin"]
 	path = kaolin/kaolin
 	url = https://github.com/NVIDIAGameWorks/kaolin.git
+
+[submodule "blitzar"]
+	path = blitzar/blitzar
+	url = https://github.com/spaceandtimefdn/blitzar
