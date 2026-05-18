@@ -1,6 +1,6 @@
 # 🔥 Hot CUDAs — CUDA/GPU 开源项目知识库
 
-> 自动整理 2026-05-18 | 47 个热门项目 | 深度源码分析 · Git Submodules · 持续更新
+> 自动整理 2026-05-18 | 48 个热门项目 | 深度源码分析 · Git Submodules · 持续更新
 
 ## 📦 使用方式
 
@@ -68,14 +68,15 @@ git submodule update --remote
 | 44 | **RTP-LLM** | 1k | `rtp-llm/rtp-llm` | [RTP-LLM](https://github.com/alibaba/rtp-llm) |
 | 45 | **RAFT** | 1k | `raft/raft` | [RAFT](https://github.com/rapidsai/raft) |
 | 46 | **CCCL** | 2k | `cccl/cccl` | [CCCL](https://github.com/NVIDIA/cccl) |
-| 47 | **UCC** | 307 | `ucc/ucc` | [UCC](https://github.com/openucx/ucc) |
+| 47 | **PyCUDA** | 2k | `pycuda/pycuda` | [PyCUDA](https://github.com/inducer/pycuda) |
+| 48 | **UCC** | 307 | `ucc/ucc` | [UCC](https://github.com/openucx/ucc) |
 
 ---
 
 ## 🗂️ 按领域分类
 
 ### 🔧 GPU 内核 & 算子
-CUTLASS · FlashAttention · GPU-Puzzles · Taskflow · HVM2 · CuPy · OneFlow · DeepEP · DeepGEMM · cuda-samples · LeetCUDA · RAFT · Thrust · CCCL
+CUTLASS · FlashAttention · GPU-Puzzles · Taskflow · HVM2 · CuPy · OneFlow · DeepEP · DeepGEMM · cuda-samples · LeetCUDA · RAFT · Thrust · CCCL · PyCUDA
 
 ### 🚀 推理引擎
 vLLM · SGLang · TensorRT-LLM · LMDeploy · RTP-LLM · Chitu · FasterTransformer · TensorRT
@@ -135,6 +136,7 @@ cuDF
                │
 基础库:    CCCL (Thrust+CUB+libcudacxx) ←── Thrust (归档, 并行算法, 启发C++17)
            RAFT ─── RAPIDS 底层 (cuML/cuGraph/cuVS 公共原语)
+桥梁层:    PyCUDA (Python CUDA Driver API 桥梁, GPUArray, SourceModule)
 视觉层:    GoCV (Go+OpenCV+CUDA+OpenVINO, 单二进制部署)
 框架层:    PyTorch (Dynamo/Inductor/FSDP/DTensor/Export) ←── Chainer (define-by-run先驱,CuPy母项目)
            DL4J (JVM 深度学习全栈/SameDiff/ND4J)
@@ -158,7 +160,7 @@ cuDF
 ## 📈 项目演进时序
 
 ```
-2009 ── Thrust (C++并行算法, 启发C++17标准)
+2009 ── Thrust (C++并行算法, 启发C++17标准), PyCUDA (Python CUDA桥梁)
 2015 ── Chainer (define-by-run首创), Deeplearning4J, ethminer, NCCL
 2017 ── TVM (ML编译器), GoCV, CuPy (从Chainer分离独立)
 2018 ── Horovod, FasterTransformer, DeepLearningExamples, Open3D, Taskflow, vid2vid
