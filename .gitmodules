@@ -250,3 +250,7 @@
 [submodule "SENet/SENet"]
 	path = SENet/SENet
 	url = https://github.com/hujie-frank/SENet
+
+[submodule "StringZilla/StringZilla"]
+	path = StringZilla/StringZilla
+	url = https://github.com/ashvardanian/StringZilla
