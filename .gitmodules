@@ -193,3 +193,6 @@
 [submodule "cuml"]
 	path = cuml/cuml
 	url = https://github.com/rapidsai/cuml.git
+[submodule "rust-cuda"]
+	path = rust-cuda/rust-cuda
+	url = https://github.com/Rust-GPU/rust-cuda.git
