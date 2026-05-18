@@ -199,3 +199,6 @@
 [submodule "deep-painterly-harmonization"]
 	path = deep-painterly-harmonization/deep-painterly-harmonization
 	url = https://github.com/luanfujun/deep-painterly-harmonization.git
+[submodule "kaolin"]
+	path = kaolin/kaolin
+	url = https://github.com/NVIDIAGameWorks/kaolin.git
