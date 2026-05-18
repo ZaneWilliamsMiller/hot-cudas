@@ -1,6 +1,6 @@
 # 🔥 Hot CUDAs — CUDA/GPU 开源项目知识库
 
-> 自动整理 2026-05-18 | 41 个热门项目 | 深度源码分析 · Git Submodules · 持续更新
+> 自动整理 2026-05-18 | 42 个热门项目 | 深度源码分析 · Git Submodules · 持续更新
 
 ## 📦 使用方式
 
@@ -55,14 +55,15 @@ git submodule update --remote
 | 31 | **tensorrtx** | 8k | `tensorrtx/tensorrtx` | [tensorrtx](https://github.com/wang-xinyu/tensorrtx) |
 | 32 | **LMDeploy** | 8k | `lmdeploy/lmdeploy` | [LMDeploy](https://github.com/InternLM/lmdeploy) |
 | 33 | **GPT-NeoX** | 7k | `gpt-neox/gpt-neox` | [GPT-NeoX](https://github.com/EleutherAI/gpt-neox) |
-| 34 | **DeepGEMM** | 7k | `deepgemm/deepgemm` | [DeepGEMM](https://github.com/deepseek-ai/DeepGEMM) |
-| 35 | **Warp** | 7k | `warp/warp` | [Warp](https://github.com/NVIDIA/warp) |
-| 36 | **FasterTransformer** | 6k | `faster-transformer/faster-transformer` | [FasterTransformer](https://github.com/NVIDIA/FasterTransformer) |
-| 37 | **TileLang** | 6k | `tilelang/tilelang` | [TileLang](https://github.com/tile-ai/tilelang) |
-| 38 | **Chitu** | 3k | `chitu/chitu` | [Chitu](https://github.com/thu-pacman/chitu) |
-| 39 | **RTP-LLM** | 1k | `rtp-llm/rtp-llm` | [RTP-LLM](https://github.com/alibaba/rtp-llm) |
-| 40 | **RAFT** | 1k | `raft/raft` | [RAFT](https://github.com/rapidsai/raft) |
-| 41 | **UCC** | 307 | `ucc/ucc` | [UCC](https://github.com/openucx/ucc) |
+| 34 | **GoCV** | 7k | `gocv/gocv` | [GoCV](https://github.com/hybridgroup/gocv) |
+| 35 | **DeepGEMM** | 7k | `deepgemm/deepgemm` | [DeepGEMM](https://github.com/deepseek-ai/DeepGEMM) |
+| 36 | **Warp** | 7k | `warp/warp` | [Warp](https://github.com/NVIDIA/warp) |
+| 37 | **FasterTransformer** | 6k | `faster-transformer/faster-transformer` | [FasterTransformer](https://github.com/NVIDIA/FasterTransformer) |
+| 38 | **TileLang** | 6k | `tilelang/tilelang` | [TileLang](https://github.com/tile-ai/tilelang) |
+| 39 | **Chitu** | 3k | `chitu/chitu` | [Chitu](https://github.com/thu-pacman/chitu) |
+| 40 | **RTP-LLM** | 1k | `rtp-llm/rtp-llm` | [RTP-LLM](https://github.com/alibaba/rtp-llm) |
+| 41 | **RAFT** | 1k | `raft/raft` | [RAFT](https://github.com/rapidsai/raft) |
+| 42 | **UCC** | 307 | `ucc/ucc` | [UCC](https://github.com/openucx/ucc) |
 
 ---
 
@@ -91,6 +92,9 @@ PyTorch · Deeplearning4J
 
 ### 🎨 神经图形学 & 3D
 Instant-NGP · Open3D · vid2vid
+
+### 👁️ 计算机视觉
+GoCV (Go+OpenCV+CUDA+OpenVINO)
 
 ### 📚 参考实现
 DeepLearningExamples · tensorrtx · jetson-inference
@@ -122,6 +126,7 @@ cuDF
 通信层:    UCC (统一 NCCL/UCP/SHARP) + DeepEP (MoE EP)
                │
 基础库:    RAFT ─── RAPIDS 底层 (cuML/cuGraph/cuVS 公共原语)
+视觉层:    GoCV (Go+OpenCV+CUDA+OpenVINO, 单二进制部署)
 框架层:    PyTorch (Dynamo/Inductor/FSDP/DTensor/Export)
            DL4J (JVM 深度学习全栈/SameDiff/ND4J)
 编译层:    TileLang ─── TVM ─── CuTeDSL (CUTLASS)
@@ -144,7 +149,7 @@ cuDF
 
 ```
 2015 ── Deeplearning4J (JVM深度学习)
-2017 ── TVM (ML编译器, Apache孵化)
+2017 ── TVM (ML编译器, Apache孵化), GoCV (Go+OpenCV)
 2018 ── Horovod, FasterTransformer, DeepLearningExamples, Open3D, Taskflow, vid2vid
 2019 ── Apex (AMP 混合精度), jetson-inference
 2020 ── DeepSpeed (ZeRO), Megatron-LM (TP/PP), ZLUDA (CUDA兼容层), GPT-NeoX
