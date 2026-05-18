@@ -180,3 +180,6 @@
 [submodule "flashinfer"]
 	path = flashinfer/flashinfer
 	url = https://github.com/flashinfer-ai/flashinfer.git
+[submodule "lectures"]
+	path = lectures/lectures
+	url = https://github.com/gpu-mode/lectures.git
