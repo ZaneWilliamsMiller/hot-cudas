@@ -186,3 +186,7 @@
 [submodule "dali"]
 	path = dali/dali
 	url = https://github.com/NVIDIA/DALI.git
+[submodule "alien"]
+	path = alien/alien
+	url = https://github.com/chrxh/alien.git
+	branch = develop
