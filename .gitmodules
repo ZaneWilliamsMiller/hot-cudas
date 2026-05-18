@@ -218,3 +218,7 @@
 [submodule "aitemplate"]
 	path = aitemplate/aitemplate
 	url = https://github.com/facebookincubator/AITemplate
+
+[submodule "pytorch-yolov4"]
+	path = pytorch-yolov4/pytorch-YOLOv4
+	url = https://github.com/Tianxiaomo/pytorch-YOLOv4
