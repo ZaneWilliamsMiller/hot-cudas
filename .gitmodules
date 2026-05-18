@@ -234,3 +234,7 @@
 [submodule "tiny-cuda-nn/tiny-cuda-nn"]
 	path = tiny-cuda-nn/tiny-cuda-nn
 	url = https://github.com/NVlabs/tiny-cuda-nn
+
+[submodule "lite.ai.toolkit/lite.ai.toolkit"]
+	path = lite.ai.toolkit/lite.ai.toolkit
+	url = https://github.com/xlite-dev/lite.ai.toolkit
