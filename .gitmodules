@@ -262,3 +262,7 @@
 [submodule "flownet2-pytorch/flownet2-pytorch"]
 	path = flownet2-pytorch/flownet2-pytorch
 	url = https://github.com/NVIDIA/flownet2-pytorch
+
+[submodule "lygia/lygia"]
+	path = lygia/lygia
+	url = https://github.com/patriciogonzalezvivo/lygia
