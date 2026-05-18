@@ -1,6 +1,6 @@
 # 🔥 Hot CUDAs — CUDA/GPU 开源项目知识库
 
-> 自动整理 2026-05-18 | 42 个热门项目 | 深度源码分析 · Git Submodules · 持续更新
+> 自动整理 2026-05-18 | 43 个热门项目 | 深度源码分析 · Git Submodules · 持续更新
 
 ## 📦 使用方式
 
@@ -60,10 +60,11 @@ git submodule update --remote
 | 36 | **Warp** | 7k | `warp/warp` | [Warp](https://github.com/NVIDIA/warp) |
 | 37 | **FasterTransformer** | 6k | `faster-transformer/faster-transformer` | [FasterTransformer](https://github.com/NVIDIA/FasterTransformer) |
 | 38 | **TileLang** | 6k | `tilelang/tilelang` | [TileLang](https://github.com/tile-ai/tilelang) |
-| 39 | **Chitu** | 3k | `chitu/chitu` | [Chitu](https://github.com/thu-pacman/chitu) |
-| 40 | **RTP-LLM** | 1k | `rtp-llm/rtp-llm` | [RTP-LLM](https://github.com/alibaba/rtp-llm) |
-| 41 | **RAFT** | 1k | `raft/raft` | [RAFT](https://github.com/rapidsai/raft) |
-| 42 | **UCC** | 307 | `ucc/ucc` | [UCC](https://github.com/openucx/ucc) |
+| 39 | **ethminer** | 6k | `ethminer/ethminer` | [ethminer](https://github.com/ethereum-mining/ethminer) |
+| 40 | **Chitu** | 3k | `chitu/chitu` | [Chitu](https://github.com/thu-pacman/chitu) |
+| 41 | **RTP-LLM** | 1k | `rtp-llm/rtp-llm` | [RTP-LLM](https://github.com/alibaba/rtp-llm) |
+| 42 | **RAFT** | 1k | `raft/raft` | [RAFT](https://github.com/rapidsai/raft) |
+| 43 | **UCC** | 307 | `ucc/ucc` | [UCC](https://github.com/openucx/ucc) |
 
 ---
 
@@ -95,6 +96,9 @@ Instant-NGP · Open3D · vid2vid
 
 ### 👁️ 计算机视觉
 GoCV (Go+OpenCV+CUDA+OpenVINO)
+
+### ⛏️ GPU 挖矿 (历史)
+ethminer (Ethash CUDA/OpenCL, 已归档)
 
 ### 📚 参考实现
 DeepLearningExamples · tensorrtx · jetson-inference
@@ -138,6 +142,7 @@ cuDF
 计算层:    HVM2 (Interaction Combinators GPU并行)
 数值层:    CuPy (NumPy/SciPy GPU) · cuDF (DataFrame GPU)
 模拟层:    Warp (独立)
+历史层:    ethminer (Ethash GPU挖矿, SHFL+DAG, 已归档)
 教学:     GPU-Puzzles (入门) ──→ LeetCUDA (实战) ──→ cuda-samples (官方)
 参考:     DeepLearningExamples (50+ SOTA模型) · tensorrtx (57模型TRT实现)
 内核:     DeepGEMM (FP8/FP4 GEMM + MoE Mega-Kernel)
@@ -148,7 +153,7 @@ cuDF
 ## 📈 项目演进时序
 
 ```
-2015 ── Deeplearning4J (JVM深度学习)
+2015 ── Deeplearning4J (JVM深度学习), ethminer (Ethash GPU挖矿)
 2017 ── TVM (ML编译器, Apache孵化), GoCV (Go+OpenCV)
 2018 ── Horovod, FasterTransformer, DeepLearningExamples, Open3D, Taskflow, vid2vid
 2019 ── Apex (AMP 混合精度), jetson-inference
