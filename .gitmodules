@@ -162,3 +162,6 @@
 [submodule "ethminer"]
 	path = ethminer/ethminer
 	url = https://github.com/ethereum-mining/ethminer.git
+[submodule "nccl"]
+	path = nccl/nccl
+	url = https://github.com/NVIDIA/nccl.git
