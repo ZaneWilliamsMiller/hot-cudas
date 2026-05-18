@@ -183,3 +183,6 @@
 [submodule "lectures"]
 	path = lectures/lectures
 	url = https://github.com/gpu-mode/lectures.git
+[submodule "dali"]
+	path = dali/dali
+	url = https://github.com/NVIDIA/DALI.git
