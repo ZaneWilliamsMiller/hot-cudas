@@ -1,6 +1,6 @@
 # 🔥 Hot CUDAs — CUDA/GPU 开源项目知识库
 
-> 自动整理 2026-05-18 | 44 个热门项目 | 深度源码分析 · Git Submodules · 持续更新
+> 自动整理 2026-05-18 | 45 个热门项目 | 深度源码分析 · Git Submodules · 持续更新
 
 ## 📦 使用方式
 
@@ -61,11 +61,12 @@ git submodule update --remote
 | 37 | **FasterTransformer** | 6k | `faster-transformer/faster-transformer` | [FasterTransformer](https://github.com/NVIDIA/FasterTransformer) |
 | 38 | **TileLang** | 6k | `tilelang/tilelang` | [TileLang](https://github.com/tile-ai/tilelang) |
 | 39 | **ethminer** | 6k | `ethminer/ethminer` | [ethminer](https://github.com/ethereum-mining/ethminer) |
-| 40 | **NCCL** | 5k | `nccl/nccl` | [NCCL](https://github.com/NVIDIA/nccl) |
-| 41 | **Chitu** | 3k | `chitu/chitu` | [Chitu](https://github.com/thu-pacman/chitu) |
-| 42 | **RTP-LLM** | 1k | `rtp-llm/rtp-llm` | [RTP-LLM](https://github.com/alibaba/rtp-llm) |
-| 43 | **RAFT** | 1k | `raft/raft` | [RAFT](https://github.com/rapidsai/raft) |
-| 44 | **UCC** | 307 | `ucc/ucc` | [UCC](https://github.com/openucx/ucc) |
+| 40 | **Chainer** | 6k | `chainer/chainer` | [Chainer](https://github.com/chainer/chainer) |
+| 41 | **NCCL** | 5k | `nccl/nccl` | [NCCL](https://github.com/NVIDIA/nccl) |
+| 42 | **Chitu** | 3k | `chitu/chitu` | [Chitu](https://github.com/thu-pacman/chitu) |
+| 43 | **RTP-LLM** | 1k | `rtp-llm/rtp-llm` | [RTP-LLM](https://github.com/alibaba/rtp-llm) |
+| 44 | **RAFT** | 1k | `raft/raft` | [RAFT](https://github.com/rapidsai/raft) |
+| 45 | **UCC** | 307 | `ucc/ucc` | [UCC](https://github.com/openucx/ucc) |
 
 ---
 
@@ -90,7 +91,7 @@ DeepSpeed · Megatron-LM · GPT-NeoX · Apex · llm.c · Horovod
 TileLang · Warp · TVM
 
 ### 🧠 深度学习框架
-PyTorch · Deeplearning4J
+PyTorch · Chainer · Deeplearning4J
 
 ### 🎨 神经图形学 & 3D
 Instant-NGP · Open3D · vid2vid
@@ -132,7 +133,7 @@ cuDF
                │
 基础库:    RAFT ─── RAPIDS 底层 (cuML/cuGraph/cuVS 公共原语)
 视觉层:    GoCV (Go+OpenCV+CUDA+OpenVINO, 单二进制部署)
-框架层:    PyTorch (Dynamo/Inductor/FSDP/DTensor/Export)
+框架层:    PyTorch (Dynamo/Inductor/FSDP/DTensor/Export) ←── Chainer (define-by-run先驱,CuPy母项目)
            DL4J (JVM 深度学习全栈/SameDiff/ND4J)
 编译层:    TileLang ─── TVM ─── CuTeDSL (CUTLASS)
 图形层:    Instant-NGP (NeRF/SDF/Hash Encoding) + Open3D (3D全栈)
@@ -141,7 +142,7 @@ cuDF
 兼容层:    ZLUDA (CUDA→AMD GPU)
 编排层:    Taskflow (DAG调度/CUDA Graph/Pipeline)
 计算层:    HVM2 (Interaction Combinators GPU并行)
-数值层:    CuPy (NumPy/SciPy GPU) · cuDF (DataFrame GPU)
+数值层:    CuPy (NumPy/SciPy GPU, 源自Chainer) · cuDF (DataFrame GPU)
 模拟层:    Warp (独立)
 历史层:    ethminer (Ethash GPU挖矿, SHFL+DAG, 已归档)
 教学:     GPU-Puzzles (入门) ──→ LeetCUDA (实战) ──→ cuda-samples (官方)
@@ -154,10 +155,10 @@ cuDF
 ## 📈 项目演进时序
 
 ```
-2015 ── Deeplearning4J (JVM深度学习), ethminer (Ethash GPU挖矿), NCCL (GPU集合通信)
-2017 ── TVM (ML编译器, Apache孵化), GoCV (Go+OpenCV)
+2015 ── Chainer (define-by-run首创), Deeplearning4J (JVM深度学习), ethminer (Ethash GPU挖矿), NCCL (GPU集合通信)
+2017 ── TVM (ML编译器, Apache孵化), GoCV (Go+OpenCV), CuPy (从Chainer分离独立)
 2018 ── Horovod, FasterTransformer, DeepLearningExamples, Open3D, Taskflow, vid2vid
-2019 ── Apex (AMP 混合精度), jetson-inference
+2019 ── Apex (AMP 混合精度), jetson-inference, Chainer进入维护模式
 2020 ── DeepSpeed (ZeRO), Megatron-LM (TP/PP), ZLUDA (CUDA兼容层), GPT-NeoX
 2021 ── CUTLASS 2.x (Ampere), UCC (统一通信), tensorrtx
 2022 ── FlashAttention FA1/FA2, vLLM, Instant-NGP, GPU-Puzzles, HVM2, DeepGEMM
