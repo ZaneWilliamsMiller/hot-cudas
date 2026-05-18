@@ -177,3 +177,6 @@
 [submodule "pycuda"]
 	path = pycuda/pycuda
 	url = https://github.com/inducer/pycuda.git
+[submodule "flashinfer"]
+	path = flashinfer/flashinfer
+	url = https://github.com/flashinfer-ai/flashinfer.git
