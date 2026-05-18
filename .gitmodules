@@ -242,3 +242,7 @@
 [submodule "ctranslate2/ctranslate2"]
 	path = ctranslate2/ctranslate2
 	url = https://github.com/OpenNMT/CTranslate2
+
+[submodule "warp-ctc/warp-ctc"]
+	path = warp-ctc/warp-ctc
+	url = https://github.com/baidu-research/warp-ctc
