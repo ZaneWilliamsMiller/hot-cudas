@@ -246,3 +246,7 @@
 [submodule "warp-ctc/warp-ctc"]
 	path = warp-ctc/warp-ctc
 	url = https://github.com/baidu-research/warp-ctc
+
+[submodule "SENet/SENet"]
+	path = SENet/SENet
+	url = https://github.com/hujie-frank/SENet
