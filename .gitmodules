@@ -190,3 +190,6 @@
 	path = alien/alien
 	url = https://github.com/chrxh/alien.git
 	branch = develop
+[submodule "cuml"]
+	path = cuml/cuml
+	url = https://github.com/rapidsai/cuml.git
