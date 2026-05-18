@@ -230,3 +230,7 @@
 [submodule "exllamav2/exllamav2"]
 	path = exllamav2/exllamav2
 	url = https://github.com/turboderp-org/exllamav2
+
+[submodule "tiny-cuda-nn/tiny-cuda-nn"]
+	path = tiny-cuda-nn/tiny-cuda-nn
+	url = https://github.com/NVlabs/tiny-cuda-nn
