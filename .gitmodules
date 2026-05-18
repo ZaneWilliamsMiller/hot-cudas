@@ -159,3 +159,6 @@
 [submodule "gocv"]
 	path = gocv/gocv
 	url = https://github.com/hybridgroup/gocv.git
+[submodule "ethminer"]
+	path = ethminer/ethminer
+	url = https://github.com/ethereum-mining/ethminer.git
