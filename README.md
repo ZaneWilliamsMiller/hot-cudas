@@ -1,6 +1,6 @@
 # 🔥 Hot CUDAs — CUDA/GPU 开源项目知识库
 
-> 自动整理 2026-05-18 | 48 个热门项目 | 深度源码分析 · Git Submodules · 持续更新
+> 自动整理 2026-05-18 | 49 个热门项目 | 深度源码分析 · Git Submodules · 持续更新
 
 ## 📦 使用方式
 
@@ -64,19 +64,20 @@ git submodule update --remote
 | 40 | **Chainer** | 6k | `chainer/chainer` | [Chainer](https://github.com/chainer/chainer) |
 | 41 | **NCCL** | 5k | `nccl/nccl` | [NCCL](https://github.com/NVIDIA/nccl) |
 | 42 | **Thrust** | 5k | `thrust/thrust` | [Thrust](https://github.com/NVIDIA/thrust) |
-| 43 | **Chitu** | 3k | `chitu/chitu` | [Chitu](https://github.com/thu-pacman/chitu) |
-| 44 | **RTP-LLM** | 1k | `rtp-llm/rtp-llm` | [RTP-LLM](https://github.com/alibaba/rtp-llm) |
-| 45 | **RAFT** | 1k | `raft/raft` | [RAFT](https://github.com/rapidsai/raft) |
-| 46 | **CCCL** | 2k | `cccl/cccl` | [CCCL](https://github.com/NVIDIA/cccl) |
-| 47 | **PyCUDA** | 2k | `pycuda/pycuda` | [PyCUDA](https://github.com/inducer/pycuda) |
-| 48 | **UCC** | 307 | `ucc/ucc` | [UCC](https://github.com/openucx/ucc) |
+| 43 | **FlashInfer** | 6k | `flashinfer/flashinfer` | [FlashInfer](https://github.com/flashinfer-ai/flashinfer) |
+| 44 | **Chitu** | 3k | `chitu/chitu` | [Chitu](https://github.com/thu-pacman/chitu) |
+| 45 | **RTP-LLM** | 1k | `rtp-llm/rtp-llm` | [RTP-LLM](https://github.com/alibaba/rtp-llm) |
+| 46 | **RAFT** | 1k | `raft/raft` | [RAFT](https://github.com/rapidsai/raft) |
+| 47 | **CCCL** | 2k | `cccl/cccl` | [CCCL](https://github.com/NVIDIA/cccl) |
+| 48 | **PyCUDA** | 2k | `pycuda/pycuda` | [PyCUDA](https://github.com/inducer/pycuda) |
+| 49 | **UCC** | 307 | `ucc/ucc` | [UCC](https://github.com/openucx/ucc) |
 
 ---
 
 ## 🗂️ 按领域分类
 
 ### 🔧 GPU 内核 & 算子
-CUTLASS · FlashAttention · GPU-Puzzles · Taskflow · HVM2 · CuPy · OneFlow · DeepEP · DeepGEMM · cuda-samples · LeetCUDA · RAFT · Thrust · CCCL · PyCUDA
+CUTLASS · FlashAttention · FlashInfer · GPU-Puzzles · Taskflow · HVM2 · CuPy · OneFlow · DeepEP · DeepGEMM · cuda-samples · LeetCUDA · RAFT · Thrust · CCCL · PyCUDA
 
 ### 🚀 推理引擎
 vLLM · SGLang · TensorRT-LLM · LMDeploy · RTP-LLM · Chitu · FasterTransformer · TensorRT
@@ -122,11 +123,11 @@ cuDF
 训练栈:    llm.c ─── Apex ─── DeepSpeed / Megatron-LM
                │         │     └── Horovod (Ring-AllReduce)
                │         └── GPT-NeoX (Megatron+DeepSpeed+MoE/RWKV/Mamba)
-               └──── 内核层: CUTLASS + FlashAttention
-                              │
+               └──── 内核层: CUTLASS + FlashAttention + FlashInfer
+                              │                    │
 推理栈:    FasterTransformer ──→ TensorRT ──→ TensorRT-LLM ── vLLM/SGLang
-               ↓                   │
-          tensorrtx (TRT参考实现)   └── LMDeploy (TurboMind+PyTorch双引擎)
+               ↓                   │                        │
+          tensorrtx (TRT参考实现)   └── LMDeploy (TurboMind) └── FlashInfer (默认注意力后端)
                ↓
           vLLM ←──→ SGLang ←── RTP-LLM ←── Chitu (国产GPU推理)
                │         │
@@ -152,7 +153,7 @@ cuDF
 历史层:    ethminer (Ethash GPU挖矿, SHFL+DAG, 已归档)
 教学:     GPU-Puzzles (入门) ──→ LeetCUDA (实战) ──→ cuda-samples (官方)
 参考:     DeepLearningExamples (50+ SOTA模型) · tensorrtx (57模型TRT实现)
-内核:     DeepGEMM (FP8/FP4 GEMM + MoE Mega-Kernel)
+内核:     DeepGEMM (FP8/FP4 GEMM + MoE Mega-Kernel) · FlashInfer (推理内核库, JIT生成, 多后端)
 ```
 
 ---
@@ -168,8 +169,8 @@ cuDF
 2020 ── DeepSpeed, Megatron-LM, ZLUDA, GPT-NeoX
 2021 ── CUTLASS 2.x, UCC, tensorrtx
 2022 ── FlashAttention, vLLM, Instant-NGP, GPU-Puzzles, HVM2, DeepGEMM
-2023 ── CCCL (Thrust+CUB+libcudacxx合并), SGLang, RTP-LLM, LMDeploy, Thrust归档
-2024 ── CUTLASS 4.x, FA3/FA4, LeetCUDA, DeepEP, Chitu
-2025 ── llm.c, TileLang, LMCache dev, CCCL v3.5
+2023 ── CCCL (Thrust+CUB+libcudacxx合并), SGLang, RTP-LLM, LMDeploy, Thrust归档, FlashInfer
+2024 ── CUTLASS 4.x, FA3/FA4, LeetCUDA, DeepEP, Chitu, FlashInfer MLA/POD
+2025 ── llm.c, TileLang, LMCache dev, CCCL v3.5, FlashInfer FP4/Blackwell
 2026 ── cuDF v26.06, PyTorch v2.13, TVM v0.25, TensorRT 10.16/11.0
 ```
