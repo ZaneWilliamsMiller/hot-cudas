@@ -168,3 +168,9 @@
 [submodule "chainer"]
 	path = chainer/chainer
 	url = https://github.com/chainer/chainer.git
+[submodule "thrust"]
+	path = thrust/thrust
+	url = https://github.com/NVIDIA/thrust.git
+[submodule "cccl"]
+	path = cccl/cccl
+	url = https://github.com/NVIDIA/cccl.git
