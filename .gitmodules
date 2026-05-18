@@ -174,3 +174,6 @@
 [submodule "cccl"]
 	path = cccl/cccl
 	url = https://github.com/NVIDIA/cccl.git
+[submodule "pycuda"]
+	path = pycuda/pycuda
+	url = https://github.com/inducer/pycuda.git
