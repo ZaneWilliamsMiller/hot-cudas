@@ -33,50 +33,51 @@ git submodule update --remote
 | 9 | **DeepLearningExamples** | 15k | `deep-learning-examples/DeepLearningExamples` | [DeepLearningExamples](https://github.com/NVIDIA/DeepLearningExamples) |
 | 10 | **Horovod** | 15k | `horovod/horovod` | [Horovod](https://github.com/horovod/horovod) |
 | 11 | **Deeplearning4J** | 14k | `deeplearning4j/deeplearning4j` | [Deeplearning4J](https://github.com/deeplearning4j/deeplearning4j) |
-| 12 | **ZLUDA** | 14k | `zluda/ZLUDA` | [ZLUDA](https://github.com/vosen/ZLUDA) |
+| 12 | **Open3D** | 14k | `open3d/Open3D` | [Open3D](https://github.com/isl-org/Open3D) |
 | 13 | **TensorRT-LLM** | 14k | `tensorrt-llm/TensorRT-LLM` | [TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM) |
-| 14 | **Open3D** | 14k | `open3d/Open3D` | [Open3D](https://github.com/isl-org/Open3D) |
+| 14 | **ZLUDA** | 14k | `zluda/ZLUDA` | [ZLUDA](https://github.com/vosen/ZLUDA) |
 | 15 | **TVM** | 13k | `tvm/tvm` | [TVM](https://github.com/apache/tvm) |
 | 16 | **TensorRT** | 13k | `tensorrt/TensorRT` | [TensorRT](https://github.com/NVIDIA/TensorRT) |
 | 17 | **GPU-Puzzles** | 12k | `gpu-puzzles/GPU-Puzzles` | [GPU-Puzzles](https://github.com/srush/GPU-Puzzles) |
 | 18 | **Taskflow** | 12k | `taskflow/taskflow` | [Taskflow](https://github.com/taskflow/taskflow) |
-| 19 | **HVM2** | 11k | `hvm2/HVM2` | [HVM2](https://github.com/HigherOrderCO/HVM2) |
-| 20 | **LeetCUDA** | 11k | `leetcuda/LeetCUDA` | [LeetCUDA](https://github.com/xlite-dev/LeetCUDA) |
-| 21 | **CuPy** | 11k | `cupy/cupy` | [CuPy](https://github.com/cupy/cupy) |
-| 22 | **cuDF · cuML · DALI** | 10k | `cudf/cudf` | [cuDF · cuML · DALI](https://github.com/rapidsai/cudf) |
-| 23 | **CUTLASS** | 10k | `cutlass/cutlass` | [CUTLASS](https://github.com/NVIDIA/cutlass) |
-| 24 | **DeepEP** | 10k | `deepep/DeepEP` | [DeepEP](https://github.com/deepseek-ai/DeepEP) |
+| 19 | **CuPy** | 11k | `cupy/cupy` | [CuPy](https://github.com/cupy/cupy) |
+| 20 | **HVM2** | 11k | `hvm2/HVM2` | [HVM2](https://github.com/HigherOrderCO/HVM2) |
+| 21 | **LeetCUDA** | 11k | `leetcuda/LeetCUDA` | [LeetCUDA](https://github.com/xlite-dev/LeetCUDA) |
+| 22 | **CUTLASS** | 10k | `cutlass/cutlass` | [CUTLASS](https://github.com/NVIDIA/cutlass) |
+| 23 | **DeepEP** | 10k | `deepep/DeepEP` | [DeepEP](https://github.com/deepseek-ai/DeepEP) |
+| 24 | **cuDF** | 10k | `cudf/cudf` | [cuDF](https://github.com/rapidsai/cudf) |
 | 25 | **Apex** | 9k | `apex/apex` | [Apex](https://github.com/NVIDIA/apex) |
-| 26 | **cuda-samples** | 9k | `cuda-samples/cuda-samples` | [cuda-samples](https://github.com/NVIDIA/cuda-samples) |
-| 27 | **OneFlow** | 9k | `oneflow/oneflow` | [OneFlow](https://github.com/Oneflow-Inc/oneflow) |
-| 28 | **vid2vid** | 9k | `vid2vid/vid2vid` | [vid2vid](https://github.com/NVIDIA/vid2vid) |
-| 29 | **jetson-inference** | 9k | `jetson-inference/jetson-inference` | [jetson-inference](https://github.com/dusty-nv/jetson-inference) |
+| 26 | **OneFlow** | 9k | `oneflow/oneflow` | [OneFlow](https://github.com/Oneflow-Inc/oneflow) |
+| 27 | **cuda-samples** | 9k | `cuda-samples/cuda-samples` | [cuda-samples](https://github.com/NVIDIA/cuda-samples) |
+| 28 | **jetson-inference** | 9k | `jetson-inference/jetson-inference` | [jetson-inference](https://github.com/dusty-nv/jetson-inference) |
+| 29 | **vid2vid** | 9k | `vid2vid/vid2vid` | [vid2vid](https://github.com/NVIDIA/vid2vid) |
 | 30 | **LMCache** | 8k | `lmcache/lmcache` | [LMCache](https://github.com/LMCache/LMCache) |
-| 31 | **tensorrtx** | 8k | `tensorrtx/tensorrtx` | [tensorrtx](https://github.com/wang-xinyu/tensorrtx) |
-| 32 | **LMDeploy** | 8k | `lmdeploy/lmdeploy` | [LMDeploy](https://github.com/InternLM/lmdeploy) |
-| 33 | **GPT-NeoX** | 7k | `gpt-neox/gpt-neox` | [GPT-NeoX](https://github.com/EleutherAI/gpt-neox) |
-| 34 | **GoCV** | 7k | `gocv/gocv` | [GoCV](https://github.com/hybridgroup/gocv) |
-| 35 | **DeepGEMM** | 7k | `deepgemm/deepgemm` | [DeepGEMM](https://github.com/deepseek-ai/DeepGEMM) |
+| 31 | **LMDeploy** | 8k | `lmdeploy/lmdeploy` | [LMDeploy](https://github.com/InternLM/lmdeploy) |
+| 32 | **tensorrtx** | 8k | `tensorrtx/tensorrtx` | [tensorrtx](https://github.com/wang-xinyu/tensorrtx) |
+| 33 | **DeepGEMM** | 7k | `deepgemm/deepgemm` | [DeepGEMM](https://github.com/deepseek-ai/DeepGEMM) |
+| 34 | **GPT-NeoX** | 7k | `gpt-neox/gpt-neox` | [GPT-NeoX](https://github.com/EleutherAI/gpt-neox) |
+| 35 | **GoCV** | 7k | `gocv/gocv` | [GoCV](https://github.com/hybridgroup/gocv) |
 | 36 | **Warp** | 7k | `warp/warp` | [Warp](https://github.com/NVIDIA/warp) |
-| 37 | **FasterTransformer** | 6k | `faster-transformer/faster-transformer` | [FasterTransformer](https://github.com/NVIDIA/FasterTransformer) |
-| 38 | **TileLang** | 6k | `tilelang/tilelang` | [TileLang](https://github.com/tile-ai/tilelang) |
-| 39 | **ethminer** | 6k | `ethminer/ethminer` | [ethminer](https://github.com/ethereum-mining/ethminer) |
-| 40 | **GPU MODE Lectures** | 6k | `lectures/lectures` | [GPU MODE Lectures](https://github.com/gpu-mode/lectures) |
-| 41 | **Deep Painterly** | 6k | `deep-painterly-harmonization/deep-painterly-harmonization` | [Deep Painterly](https://github.com/luanfujun/deep-painterly-harmonization) |
-| 42 | **FlashInfer** | 6k | `flashinfer/flashinfer` | [FlashInfer](https://github.com/flashinfer-ai/flashinfer) |
-| 43 | **Chainer** | 6k | `chainer/chainer` | [Chainer](https://github.com/chainer/chainer) |
-| 44 | **ALIEN** | 5k | `alien/alien` | [ALIEN](https://github.com/chrxh/alien) |
-| 45 | **Kaolin** | 5k | `kaolin/kaolin` | [Kaolin](https://github.com/NVIDIAGameWorks/kaolin) |
-| 46 | **Rust CUDA** | 5k | `rust-cuda/rust-cuda` | [Rust CUDA](https://github.com/Rust-GPU/rust-cuda) |
+| 37 | **Chainer** | 6k | `chainer/chainer` | [Chainer](https://github.com/chainer/chainer) |
+| 38 | **DALI** | 6k | `dali/DALI` | [DALI](https://github.com/NVIDIA/DALI) |
+| 39 | **Deep Painterly** | 6k | `deep-painterly-harmonization/deep-painterly-harmonization` | [Deep Painterly](https://github.com/luanfujun/deep-painterly-harmonization) |
+| 40 | **FasterTransformer** | 6k | `faster-transformer/faster-transformer` | [FasterTransformer](https://github.com/NVIDIA/FasterTransformer) |
+| 41 | **FlashInfer** | 6k | `flashinfer/flashinfer` | [FlashInfer](https://github.com/flashinfer-ai/flashinfer) |
+| 42 | **GPU MODE Lectures** | 6k | `lectures/lectures` | [GPU MODE Lectures](https://github.com/gpu-mode/lectures) |
+| 43 | **TileLang** | 6k | `tilelang/tilelang` | [TileLang](https://github.com/tile-ai/tilelang) |
+| 44 | **ethminer** | 6k | `ethminer/ethminer` | [ethminer](https://github.com/ethereum-mining/ethminer) |
+| 45 | **ALIEN** | 5k | `alien/alien` | [ALIEN](https://github.com/chrxh/alien) |
+| 46 | **Kaolin** | 5k | `kaolin/kaolin` | [Kaolin](https://github.com/NVIDIAGameWorks/kaolin) |
 | 47 | **NCCL** | 5k | `nccl/nccl` | [NCCL](https://github.com/NVIDIA/nccl) |
-| 48 | **cuML** | 5k | `cuml/cuml` | [cuML](https://github.com/rapidsai/cuml) |
+| 48 | **Rust CUDA** | 5k | `rust-cuda/rust-cuda` | [Rust CUDA](https://github.com/Rust-GPU/rust-cuda) |
 | 49 | **Thrust** | 5k | `thrust/thrust` | [Thrust](https://github.com/NVIDIA/thrust) |
-| 50 | **CCCL** | 2k | `cccl/cccl` | [CCCL](https://github.com/NVIDIA/cccl) |
-| 51 | **PyCUDA** | 2k | `pycuda/pycuda` | [PyCUDA](https://github.com/inducer/pycuda) |
-| 52 | **Chitu** | 3k | `chitu/chitu` | [Chitu](https://github.com/thu-pacman/chitu) |
-| 53 | **RTP-LLM** | 1k | `rtp-llm/rtp-llm` | [RTP-LLM](https://github.com/alibaba/rtp-llm) |
+| 50 | **cuML** | 5k | `cuml/cuml` | [cuML](https://github.com/rapidsai/cuml) |
+| 51 | **Chitu** | 3k | `chitu/chitu` | [Chitu](https://github.com/thu-pacman/chitu) |
+| 52 | **CCCL** | 2k | `cccl/cccl` | [CCCL](https://github.com/NVIDIA/cccl) |
+| 53 | **PyCUDA** | 2k | `pycuda/pycuda` | [PyCUDA](https://github.com/inducer/pycuda) |
 | 54 | **RAFT** | 1k | `raft/raft` | [RAFT](https://github.com/rapidsai/raft) |
-| 55 | **UCC** | 307 | `ucc/ucc` | [UCC](https://github.com/openucx/ucc) |
+| 55 | **RTP-LLM** | 1k | `rtp-llm/rtp-llm` | [RTP-LLM](https://github.com/alibaba/rtp-llm) |
+| 56 | **UCC** | 307 | `ucc/ucc` | [UCC](https://github.com/openucx/ucc) |
 
 ---
 
@@ -119,7 +120,7 @@ DeepLearningExamples · tensorrtx · jetson-inference
 ZLUDA
 
 ### 📊 数据处理
-cuDF · cuML · DALI
+cuDF · DALI · cuML
 
 ---
 
@@ -154,7 +155,7 @@ cuDF · cuML · DALI
 兼容层:    ZLUDA (CUDA→AMD GPU)
 编排层:    Taskflow (DAG调度/CUDA Graph/Pipeline)
 计算层:    HVM2 (Interaction Combinators GPU并行)
-数值层:    CuPy (NumPy/SciPy GPU, 源自Chainer) · cuDF · cuML · DALI (DataFrame GPU)
+数值层:    CuPy (NumPy/SciPy GPU, 源自Chainer) · cuDF · DALI · cuML (DataFrame GPU)
 模拟层:    Warp (独立)
 历史层:    ethminer (Ethash GPU挖矿, SHFL+DAG, 已归档)
 教学:     GPU-Puzzles · GPU MODE Lectures (34讲全栈) (入门) ──→ LeetCUDA (实战) ──→ cuda-samples (官方)
@@ -178,5 +179,5 @@ cuDF · cuML · DALI
 2023 ── CCCL (Thrust+CUB+libcudacxx合并), SGLang, RTP-LLM, LMDeploy, Thrust归档, FlashInfer
 2024 ── GPU MODE Lectures, CUTLASS 4.x, FA3/FA4, LeetCUDA, DeepEP, Chitu, FlashInfer MLA/POD
 2025 ── llm.c, TileLang, LMCache dev, CCCL v3.5, FlashInfer FP4/Blackwell
-2026 ── cuDF · cuML · DALI v26.06, PyTorch v2.13, TVM v0.25, TensorRT 10.16/11.0
+2026 ── cuDF · DALI · cuML v26.06, PyTorch v2.13, TVM v0.25, TensorRT 10.16/11.0
 ```
