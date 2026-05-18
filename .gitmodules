@@ -226,3 +226,7 @@
 [submodule "hrnet"]
 	path = hrnet/deep-high-resolution-net.pytorch
 	url = https://github.com/leoxiaobin/deep-high-resolution-net.pytorch
+
+[submodule "exllamav2/exllamav2"]
+	path = exllamav2/exllamav2
+	url = https://github.com/turboderp-org/exllamav2
