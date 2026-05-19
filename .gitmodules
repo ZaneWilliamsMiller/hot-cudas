@@ -294,3 +294,7 @@
 [submodule "aresdb/aresdb"]
 	path = aresdb/aresdb
 	url = https://github.com/uber/aresdb
+
+[submodule "heavydb/heavydb"]
+	path = heavydb/heavydb
+	url = https://github.com/heavyai/heavydb
