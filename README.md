@@ -1,6 +1,6 @@
 # 🔥 Hot CUDAs — CUDA/GPU 开源项目知识库
 
-> 自动整理 2026-05-19 | 81 个热门项目 | 深度源码分析 · Git Submodules · 持续更新
+> 自动整理 2026-05-19 | 82 个热门项目 | 深度源码分析 · Git Submodules · 持续更新
 
 ## 📦 使用方式
 
@@ -103,6 +103,7 @@ git submodule update --remote
 | 79 | **RTP-LLM** | 1k | `rtp-llm/rtp-llm` | [RTP-LLM](https://github.com/alibaba/rtp-llm) |
 | 80 | **UCC** | 307 | `ucc/ucc` | [UCC](https://github.com/openucx/ucc) |
 | 81 | **Human Pose Estimation** | 3k | `human-pose-estimation-pytorch/human-pose-estimation.pytorch` | [microsoft/human-pose-estimation.pytorch](https://github.com/microsoft/human-pose-estimation.pytorch) |
+| 82 | **Lc0** | 3k | `lc0/lc0` | [LeelaChessZero/lc0](https://github.com/LeelaChessZero/lc0) |
 
 ---
 
@@ -139,6 +140,9 @@ GoCV (Go+OpenCV+CUDA+OpenVINO) · Human Pose Estimation (ECCV2018, Simple Baseli
 
 ### ⛏️ GPU 挖矿 (历史)
 ethminer (Ethash CUDA/OpenCL, 已归档)
+
+### ♟️ GPU 博弈 & 强化学习
+Lc0 (AlphaZero棋类引擎, 神经网络+MCTS, CUDA/cuDNN/cuBLAS/CUTLASS)
 
 ### 📚 参考实现
 DeepLearningExamples · tensorrtx · jetson-inference
@@ -185,6 +189,7 @@ cuDF · DALI · cuML
 计算层:    HVM2 (Interaction Combinators GPU并行)
 数值层:    CuPy (NumPy/SciPy GPU, 源自Chainer) · cuDF · DALI · cuML (DataFrame GPU)
 模拟层:    Warp (独立)
+博弈层:    Lc0 (AlphaZero棋类引擎, CUTLASS Fused MHA, cuBLAS/cuDNN FP16, ResNet+SE+Attention)
 历史层:    ethminer (Ethash GPU挖矿, SHFL+DAG, 已归档)
 教学:     GPU-Puzzles · GPU MODE Lectures (34讲全栈) (入门) ──→ LeetCUDA (实战) ──→ cuda-samples (官方)
 参考:     DeepLearningExamples (50+ SOTA模型) · tensorrtx (57模型TRT实现)
@@ -200,7 +205,7 @@ cuDF · DALI · cuML
 2013 ── ArrayFire
 2015 ── Chainer (define-by-run首创), Deeplearning4J, ethminer, NCCL
 2017 ── DALI, TVM (ML编译器), GoCV, CuPy (从Chainer分离独立)
-2018 ── ALIEN, cuML, Deep Painterly, Horovod, FasterTransformer, DeepLearningExamples, Open3D, Taskflow, vid2vid, Human Pose Estimation
+2018 ── ALIEN, cuML, Deep Painterly, Horovod, FasterTransformer, DeepLearningExamples, Open3D, Taskflow, vid2vid, Human Pose Estimation, Lc0
 2019 ── Apex, jetson-inference, Chainer进入维护模式
 2020 ── DeepSpeed, Megatron-LM, ZLUDA, GPT-NeoX
 2021 ── CUTLASS 2.x, UCC, tensorrtx

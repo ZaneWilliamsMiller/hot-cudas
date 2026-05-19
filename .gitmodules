@@ -302,3 +302,7 @@
 	path = human-pose-estimation-pytorch/human-pose-estimation.pytorch
 	url = https://github.com/microsoft/human-pose-estimation.pytorch.git
 	branch = master
+[submodule "lc0/lc0"]
+	path = lc0/lc0
+	url = https://github.com/LeelaChessZero/lc0.git
+	branch = master
