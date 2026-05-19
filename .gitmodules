@@ -290,3 +290,7 @@
 [submodule "mmdeploy/mmdeploy"]
 	path = mmdeploy/mmdeploy
 	url = https://github.com/open-mmlab/mmdeploy
+
+[submodule "aresdb/aresdb"]
+	path = aresdb/aresdb
+	url = https://github.com/uber/aresdb
