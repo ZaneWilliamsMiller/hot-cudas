@@ -298,3 +298,7 @@
 [submodule "heavydb/heavydb"]
 	path = heavydb/heavydb
 	url = https://github.com/heavyai/heavydb
+[submodule "human-pose-estimation-pytorch/human-pose-estimation.pytorch"]
+	path = human-pose-estimation-pytorch/human-pose-estimation.pytorch
+	url = https://github.com/microsoft/human-pose-estimation.pytorch.git
+	branch = master

@@ -1,6 +1,6 @@
 # 🔥 Hot CUDAs — CUDA/GPU 开源项目知识库
 
-> 自动整理 2026-05-18 | 80 个热门项目 | 深度源码分析 · Git Submodules · 持续更新
+> 自动整理 2026-05-19 | 81 个热门项目 | 深度源码分析 · Git Submodules · 持续更新
 
 ## 📦 使用方式
 
@@ -102,6 +102,7 @@ git submodule update --remote
 | 78 | **RAFT** | 1k | `raft/raft` | [RAFT](https://github.com/rapidsai/raft) |
 | 79 | **RTP-LLM** | 1k | `rtp-llm/rtp-llm` | [RTP-LLM](https://github.com/alibaba/rtp-llm) |
 | 80 | **UCC** | 307 | `ucc/ucc` | [UCC](https://github.com/openucx/ucc) |
+| 81 | **Human Pose Estimation** | 3k | `human-pose-estimation-pytorch/human-pose-estimation.pytorch` | [microsoft/human-pose-estimation.pytorch](https://github.com/microsoft/human-pose-estimation.pytorch) |
 
 ---
 
@@ -134,7 +135,7 @@ PyTorch · Chainer · Deeplearning4J
 Instant-NGP · Open3D · vid2vid
 
 ### 👁️ 计算机视觉
-GoCV (Go+OpenCV+CUDA+OpenVINO)
+GoCV (Go+OpenCV+CUDA+OpenVINO) · Human Pose Estimation (ECCV2018, Simple Baselines, COCO/MPII)
 
 ### ⛏️ GPU 挖矿 (历史)
 ethminer (Ethash CUDA/OpenCL, 已归档)
@@ -172,6 +173,7 @@ cuDF · DALI · cuML
            RAFT ─── RAPIDS 底层 (cuML/cuGraph/cuVS 公共原语)
 桥梁层:    PyCUDA (Python CUDA Driver API 桥梁, GPUArray, SourceModule)
 视觉层:    GoCV (Go+OpenCV+CUDA+OpenVINO, 单二进制部署)
+           Human Pose Estimation (ECCV2018 Simple Baselines, ResNet+3Deconv, OKS-NMS, Cython+CUDA NMS)
 框架层:    PyTorch (Dynamo/Inductor/FSDP/DTensor/Export) ←── Chainer (define-by-run先驱,CuPy母项目)
            DL4J (JVM 深度学习全栈/SameDiff/ND4J)
 编译层:    TileLang ─── TVM ─── CuTeDSL (CUTLASS)
@@ -198,7 +200,7 @@ cuDF · DALI · cuML
 2013 ── ArrayFire
 2015 ── Chainer (define-by-run首创), Deeplearning4J, ethminer, NCCL
 2017 ── DALI, TVM (ML编译器), GoCV, CuPy (从Chainer分离独立)
-2018 ── ALIEN, cuML, Deep Painterly, Horovod, FasterTransformer, DeepLearningExamples, Open3D, Taskflow, vid2vid
+2018 ── ALIEN, cuML, Deep Painterly, Horovod, FasterTransformer, DeepLearningExamples, Open3D, Taskflow, vid2vid, Human Pose Estimation
 2019 ── Apex, jetson-inference, Chainer进入维护模式
 2020 ── DeepSpeed, Megatron-LM, ZLUDA, GPT-NeoX
 2021 ── CUTLASS 2.x, UCC, tensorrtx
