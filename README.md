@@ -1,6 +1,6 @@
 # 🔥 Hot CUDAs — CUDA/GPU 开源项目知识库
 
-> 自动整理 2026-05-19 | 83 个热门项目 | 深度源码分析 · Git Submodules · 持续更新
+> 自动整理 2026-05-19 | 84 个热门项目 | 深度源码分析 · Git Submodules · 持续更新
 
 ## 📦 使用方式
 
@@ -105,6 +105,7 @@ git submodule update --remote
 | 81 | **Human Pose Estimation** | 3k | `human-pose-estimation-pytorch/human-pose-estimation.pytorch` | [microsoft/human-pose-estimation.pytorch](https://github.com/microsoft/human-pose-estimation.pytorch) |
 | 82 | **Lc0** | 3k | `lc0/lc0` | [LeelaChessZero/lc0](https://github.com/LeelaChessZero/lc0) |
 | 83 | **MinkowskiEngine** | 3k | `minkowski-engine/MinkowskiEngine` | [NVIDIA/MinkowskiEngine](https://github.com/NVIDIA/MinkowskiEngine) |
+| 84 | **tensorRT_Pro** | 3k | `tensorrt-pro/tensorRT_Pro` | [shouxieai/tensorRT_Pro](https://github.com/shouxieai/tensorRT_Pro) |
 
 ---
 
@@ -114,7 +115,7 @@ git submodule update --remote
 CUTLASS · FlashAttention · FlashInfer · GPU MODE Lectures · GPU-Puzzles · Taskflow · HVM2 · CuPy · OneFlow · DeepEP · DeepGEMM · cuda-samples · LeetCUDA · RAFT · Thrust · CCCL · PyCUDA
 
 ### 🚀 推理引擎
-vLLM · SGLang · TensorRT-LLM · LMDeploy · RTP-LLM · Chitu · FasterTransformer · TensorRT
+vLLM · SGLang · TensorRT-LLM · LMDeploy · RTP-LLM · Chitu · FasterTransformer · TensorRT · tensorRT_Pro
 
 ### 💾 缓存 & 存储
 LMCache
@@ -184,7 +185,7 @@ cuDF · DALI · cuML
 编译层:    TileLang ─── TVM ─── CuTeDSL (CUTLASS)
 图形层:    Instant-NGP (NeRF/SDF/Hash Encoding) + Open3D (3D全栈) + MinkowskiEngine (稀疏张量卷积)
            vid2vid (视频翻译/FlowNet2/CUDA内核)
-边缘层:    jetson-inference (Jetson/TensorRT/C++推理)
+边缘层:    jetson-inference (Jetson/TensorRT/C++推理) + tensorRT_Pro (C++/Python TensorRT封装, YOLO推理)
 兼容层:    ZLUDA (CUDA→AMD GPU)
 编排层:    Taskflow (DAG调度/CUDA Graph/Pipeline)
 计算层:    HVM2 (Interaction Combinators GPU并行)
@@ -209,7 +210,7 @@ cuDF · DALI · cuML
 2018 ── ALIEN, cuML, Deep Painterly, Horovod, FasterTransformer, DeepLearningExamples, Open3D, Taskflow, vid2vid, Human Pose Estimation, Lc0
 2019 ── Apex, jetson-inference, MinkowskiEngine, Chainer进入维护模式
 2020 ── DeepSpeed, Megatron-LM, ZLUDA, GPT-NeoX
-2021 ── CUTLASS 2.x, UCC, tensorrtx
+2021 ── CUTLASS 2.x, UCC, tensorrtx, tensorRT_Pro
 2022 ── Blitzar ·  FlashAttention, vLLM, Instant-NGP, GPU-Puzzles, HVM2, DeepGEMM
 2023 ── CCCL (Thrust+CUB+libcudacxx合并), SGLang, RTP-LLM, LMDeploy, Thrust归档, FlashInfer
 2024 ── GPU MODE Lectures, CUTLASS 4.x, FA3/FA4, LeetCUDA, DeepEP, Chitu, FlashInfer MLA/POD

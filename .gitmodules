@@ -310,3 +310,7 @@
 	path = minkowski-engine/MinkowskiEngine
 	url = https://github.com/NVIDIA/MinkowskiEngine.git
 	branch = master
+[submodule "tensorrt-pro/tensorRT_Pro"]
+	path = tensorrt-pro/tensorRT_Pro
+	url = https://github.com/shouxieai/tensorRT_Pro.git
+	branch = main
