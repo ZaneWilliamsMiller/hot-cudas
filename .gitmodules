@@ -274,3 +274,7 @@
 [submodule "cuda-python/cuda-python"]
 	path = cuda-python/cuda-python
 	url = https://github.com/NVIDIA/cuda-python
+
+[submodule "TransformerEngine/TransformerEngine"]
+	path = TransformerEngine/TransformerEngine
+	url = https://github.com/NVIDIA/TransformerEngine
