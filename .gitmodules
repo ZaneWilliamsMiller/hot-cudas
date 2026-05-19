@@ -286,3 +286,7 @@
 [submodule "ThunderKittens/ThunderKittens"]
 	path = ThunderKittens/ThunderKittens
 	url = https://github.com/HazyResearch/ThunderKittens
+
+[submodule "mmdeploy/mmdeploy"]
+	path = mmdeploy/mmdeploy
+	url = https://github.com/open-mmlab/mmdeploy
