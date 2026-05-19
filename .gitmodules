@@ -282,3 +282,7 @@
 [submodule "SageAttention/SageAttention"]
 	path = SageAttention/SageAttention
 	url = https://github.com/thu-ml/SageAttention
+
+[submodule "ThunderKittens/ThunderKittens"]
+	path = ThunderKittens/ThunderKittens
+	url = https://github.com/HazyResearch/ThunderKittens
