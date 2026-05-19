@@ -278,3 +278,7 @@
 [submodule "TransformerEngine/TransformerEngine"]
 	path = TransformerEngine/TransformerEngine
 	url = https://github.com/NVIDIA/TransformerEngine
+
+[submodule "SageAttention/SageAttention"]
+	path = SageAttention/SageAttention
+	url = https://github.com/thu-ml/SageAttention
