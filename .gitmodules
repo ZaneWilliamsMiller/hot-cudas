@@ -306,3 +306,7 @@
 	path = lc0/lc0
 	url = https://github.com/LeelaChessZero/lc0.git
 	branch = master
+[submodule "minkowski-engine/MinkowskiEngine"]
+	path = minkowski-engine/MinkowskiEngine
+	url = https://github.com/NVIDIA/MinkowskiEngine.git
+	branch = master

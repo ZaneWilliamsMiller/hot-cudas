@@ -1,6 +1,6 @@
 # 🔥 Hot CUDAs — CUDA/GPU 开源项目知识库
 
-> 自动整理 2026-05-19 | 82 个热门项目 | 深度源码分析 · Git Submodules · 持续更新
+> 自动整理 2026-05-19 | 83 个热门项目 | 深度源码分析 · Git Submodules · 持续更新
 
 ## 📦 使用方式
 
@@ -104,6 +104,7 @@ git submodule update --remote
 | 80 | **UCC** | 307 | `ucc/ucc` | [UCC](https://github.com/openucx/ucc) |
 | 81 | **Human Pose Estimation** | 3k | `human-pose-estimation-pytorch/human-pose-estimation.pytorch` | [microsoft/human-pose-estimation.pytorch](https://github.com/microsoft/human-pose-estimation.pytorch) |
 | 82 | **Lc0** | 3k | `lc0/lc0` | [LeelaChessZero/lc0](https://github.com/LeelaChessZero/lc0) |
+| 83 | **MinkowskiEngine** | 3k | `minkowski-engine/MinkowskiEngine` | [NVIDIA/MinkowskiEngine](https://github.com/NVIDIA/MinkowskiEngine) |
 
 ---
 
@@ -133,7 +134,7 @@ TileLang · Warp · TVM
 PyTorch · Chainer · Deeplearning4J
 
 ### 🎨 神经图形学 & 3D
-Instant-NGP · Open3D · vid2vid
+Instant-NGP · Open3D · vid2vid · MinkowskiEngine
 
 ### 👁️ 计算机视觉
 GoCV (Go+OpenCV+CUDA+OpenVINO) · Human Pose Estimation (ECCV2018, Simple Baselines, COCO/MPII)
@@ -181,7 +182,7 @@ cuDF · DALI · cuML
 框架层:    PyTorch (Dynamo/Inductor/FSDP/DTensor/Export) ←── Chainer (define-by-run先驱,CuPy母项目)
            DL4J (JVM 深度学习全栈/SameDiff/ND4J)
 编译层:    TileLang ─── TVM ─── CuTeDSL (CUTLASS)
-图形层:    Instant-NGP (NeRF/SDF/Hash Encoding) + Open3D (3D全栈)
+图形层:    Instant-NGP (NeRF/SDF/Hash Encoding) + Open3D (3D全栈) + MinkowskiEngine (稀疏张量卷积)
            vid2vid (视频翻译/FlowNet2/CUDA内核)
 边缘层:    jetson-inference (Jetson/TensorRT/C++推理)
 兼容层:    ZLUDA (CUDA→AMD GPU)
@@ -206,7 +207,7 @@ cuDF · DALI · cuML
 2015 ── Chainer (define-by-run首创), Deeplearning4J, ethminer, NCCL
 2017 ── DALI, TVM (ML编译器), GoCV, CuPy (从Chainer分离独立)
 2018 ── ALIEN, cuML, Deep Painterly, Horovod, FasterTransformer, DeepLearningExamples, Open3D, Taskflow, vid2vid, Human Pose Estimation, Lc0
-2019 ── Apex, jetson-inference, Chainer进入维护模式
+2019 ── Apex, jetson-inference, MinkowskiEngine, Chainer进入维护模式
 2020 ── DeepSpeed, Megatron-LM, ZLUDA, GPT-NeoX
 2021 ── CUTLASS 2.x, UCC, tensorrtx
 2022 ── Blitzar ·  FlashAttention, vLLM, Instant-NGP, GPU-Puzzles, HVM2, DeepGEMM
