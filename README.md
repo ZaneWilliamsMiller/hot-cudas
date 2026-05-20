@@ -1,6 +1,6 @@
 # 🔥 Hot CUDAs — CUDA/GPU 开源项目知识库
 
-> 自动整理 2026-05-19 | 84 个热门项目 | 深度源码分析 · Git Submodules · 持续更新
+> 自动整理 2026-05-20 | 85 个热门项目 | 深度源码分析 · Git Submodules · 持续更新
 
 ## 📦 使用方式
 
@@ -106,6 +106,7 @@ git submodule update --remote
 | 82 | **Lc0** | 3k | `lc0/lc0` | [LeelaChessZero/lc0](https://github.com/LeelaChessZero/lc0) |
 | 83 | **MinkowskiEngine** | 3k | `minkowski-engine/MinkowskiEngine` | [NVIDIA/MinkowskiEngine](https://github.com/NVIDIA/MinkowskiEngine) |
 | 84 | **tensorRT_Pro** | 3k | `tensorrt-pro/tensorRT_Pro` | [shouxieai/tensorRT_Pro](https://github.com/shouxieai/tensorRT_Pro) |
+| 85 | **cv-detect-robot** | 541 | `cv-detect-robot/cv-detect-robot` | [guojianyang/cv-detect-robot](https://github.com/guojianyang/cv-detect-robot) |
 
 ---
 
@@ -138,7 +139,7 @@ PyTorch · Chainer · Deeplearning4J
 Instant-NGP · Open3D · vid2vid · MinkowskiEngine
 
 ### 👁️ 计算机视觉
-GoCV (Go+OpenCV+CUDA+OpenVINO) · Human Pose Estimation (ECCV2018, Simple Baselines, COCO/MPII)
+GoCV (Go+OpenCV+CUDA+OpenVINO) · Human Pose Estimation (ECCV2018, Simple Baselines, COCO/MPII) · cv-detect-robot (YOLO+DeepSort+DeepStream+TensorRT+ROS)
 
 ### ⛏️ GPU 挖矿 (历史)
 ethminer (Ethash CUDA/OpenCL, 已归档)
@@ -180,6 +181,7 @@ cuDF · DALI · cuML
 桥梁层:    PyCUDA (Python CUDA Driver API 桥梁, GPUArray, SourceModule)
 视觉层:    GoCV (Go+OpenCV+CUDA+OpenVINO, 单二进制部署)
            Human Pose Estimation (ECCV2018 Simple Baselines, ResNet+3Deconv, OKS-NMS, Cython+CUDA NMS)
+           cv-detect-robot (YOLO+DeepSort+DeepStream+TensorRT+ROS, 边缘部署)
 框架层:    PyTorch (Dynamo/Inductor/FSDP/DTensor/Export) ←── Chainer (define-by-run先驱,CuPy母项目)
            DL4J (JVM 深度学习全栈/SameDiff/ND4J)
 编译层:    TileLang ─── TVM ─── CuTeDSL (CUTLASS)

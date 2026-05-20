@@ -314,3 +314,7 @@
 	path = tensorrt-pro/tensorRT_Pro
 	url = https://github.com/shouxieai/tensorRT_Pro.git
 	branch = main
+[submodule "cv-detect-robot/cv-detect-robot"]
+	path = cv-detect-robot/cv-detect-robot
+	url = https://github.com/guojianyang/cv-detect-robot.git
+	branch = main
