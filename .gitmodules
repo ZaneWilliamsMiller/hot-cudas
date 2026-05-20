@@ -358,3 +358,19 @@
 	path = deepmd-kit/deepmd-kit
 	url = https://github.com/deepmodeling/deepmd-kit.git
 	branch = master
+[submodule "llm-note/llm_note"]
+	path = llm-note/llm_note
+	url = https://github.com/harleyszhang/llm_note.git
+	branch = main
+[submodule "paddleslim/PaddleSlim"]
+	path = paddleslim/PaddleSlim
+	url = https://github.com/PaddlePaddle/PaddleSlim.git
+	branch = develop
+[submodule "aphrodite-engine/aphrodite-engine"]
+	path = aphrodite-engine/aphrodite-engine
+	url = https://github.com/dphnAI/aphrodite-engine.git
+	branch = main
+[submodule "ppq/ppq"]
+	path = ppq/ppq
+	url = https://github.com/OpenPPL/ppq.git
+	branch = master
