@@ -330,3 +330,7 @@
 	path = model-optimizer/Model-Optimizer
 	url = https://github.com/NVIDIA/Model-Optimizer.git
 	branch = main
+[submodule "cv-cuda/CV-CUDA"]
+	path = cv-cuda/CV-CUDA
+	url = https://github.com/CVCUDA/CV-CUDA.git
+	branch = main
