@@ -107,9 +107,9 @@ git submodule update --remote
 | 83 | **Model-Optimizer** | 2.7k | `model-optimizer/Model-Optimizer` | [NVIDIA/Model-Optimizer](https://github.com/NVIDIA/Model-Optimizer) |
 | 84 | **CV-CUDA** | 2.7k | `cv-cuda/CV-CUDA` | [CVCUDA/CV-CUDA](https://github.com/CVCUDA/CV-CUDA) |
 | 85 | **CUDALibrarySamples** | 2.4k | `cuda-library-samples/CUDALibrarySamples` | [CUDALibrarySamples](https://github.com/NVIDIA/CUDALibrarySamples) |
-| 86 | **torch-ngp** | 2.2k | `torch-ngp/torch-ngp` | [torch-ngp](https://github.com/ashawkey/torch-ngp) |
-| 87 | **cuGraph** | 2.2k | `cugraph/cugraph` | [cuGraph](https://github.com/rapidsai/cugraph) |
-| 88 | **CCCL** | 2k | `cccl/cccl` | [CCCL](https://github.com/NVIDIA/cccl) |
+| 86 | **CCCL** | 2.3k | `cccl/cccl` | [CCCL](https://github.com/NVIDIA/cccl) |
+| 87 | **torch-ngp** | 2.2k | `torch-ngp/torch-ngp` | [torch-ngp](https://github.com/ashawkey/torch-ngp) |
+| 88 | **cuGraph** | 2.2k | `cugraph/cugraph` | [cuGraph](https://github.com/rapidsai/cugraph) |
 | 89 | **PyCUDA** | 2k | `pycuda/pycuda` | [PyCUDA](https://github.com/inducer/pycuda) |
 | 90 | **DeepMD-kit** | 1.9k | `deepmd-kit/deepmd-kit` | [DeepMD-kit](https://github.com/deepmodeling/deepmd-kit) |
 | 91 | **PPQ** | 1.8k | `ppq/ppq` | [PPQ](https://github.com/OpenPPL/ppq) |
