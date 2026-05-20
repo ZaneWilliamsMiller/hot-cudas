@@ -68,32 +68,32 @@ git submodule update --remote
 | 44 | **ethminer** | 6k | `ethminer/ethminer` | [ethminer](https://github.com/ethereum-mining/ethminer) |
 | 45 | **ALIEN** | 5k | `alien/alien` | [ALIEN](https://github.com/chrxh/alien) |
 | 46 | **Kaolin** | 5k | `kaolin/kaolin` | [Kaolin](https://github.com/NVIDIAGameWorks/kaolin) |
-| 50 | **Blitzar** | 4.9k | `blitzar/blitzar` | [spaceandtimefdn/blitzar](https://github.com/spaceandtimefdn/blitzar) |
-| 55 | **tiny-cuda-nn** | 4.5k | `tiny-cuda-nn/tiny-cuda-nn` | [NVlabs/tiny-cuda-nn](https://github.com/NVlabs/tiny-cuda-nn) |
-| 56 | **lite.ai.toolkit** | 4.4k | `lite.ai.toolkit/lite.ai.toolkit` | [xlite-dev/lite.ai.toolkit](https://github.com/xlite-dev/lite.ai.toolkit) |
-| 57 | **CTranslate2** | 4.5k | `ctranslate2/ctranslate2` | [OpenNMT/CTranslate2](https://github.com/OpenNMT/CTranslate2) |
-| 58 | **warp-ctc** | 4.1k | `warp-ctc/warp-ctc` | [baidu-research/warp-ctc](https://github.com/baidu-research/warp-ctc) |
-| 59 | **SENet** | 3.6k | `SENet/SENet` | [hujie-frank/SENet](https://github.com/hujie-frank/SENet) |
-| 60 | **StringZilla** | 3.5k | `StringZilla/StringZilla` | [ashvardanian/StringZilla](https://github.com/ashvardanian/StringZilla) |
-| 61 | **LightSeq** | 3.3k | `lightseq/lightseq` | [bytedance/lightseq](https://github.com/bytedance/lightseq) |
-| 62 | **FlowNet2-PyTorch** | 3.3k | `flownet2-pytorch/flownet2-pytorch` | [NVIDIA/flownet2-pytorch](https://github.com/NVIDIA/flownet2-pytorch) |
-| 63 | **LYGIA** | 3.3k | `lygia/lygia` | [patriciogonzalezvivo/lygia](https://github.com/patriciogonzalezvivo/lygia) |
-| 64 | **Jittor** | 3.2k | `jittor/jittor` | [Jittor/jittor](https://github.com/Jittor/jittor) |
-| 65 | **cuda-python** | 3.3k | `cuda-python/cuda-python` | [NVIDIA/cuda-python](https://github.com/NVIDIA/cuda-python) |
-| 66 | **TransformerEngine** | 3.3k | `TransformerEngine/TransformerEngine` | [NVIDIA/TransformerEngine](https://github.com/NVIDIA/TransformerEngine) |
-| 67 | **SageAttention** | 3.4k | `SageAttention/SageAttention` | [thu-ml/SageAttention](https://github.com/thu-ml/SageAttention) |
-| 68 | **ThunderKittens** | 3.4k | `ThunderKittens/ThunderKittens` | [HazyResearch/ThunderKittens](https://github.com/HazyResearch/ThunderKittens) |
-| 69 | **MMDeploy** | 3.1k | `mmdeploy/mmdeploy` | [open-mmlab/mmdeploy](https://github.com/open-mmlab/mmdeploy) |
-| 70 | **AresDB** | 3.1k | `aresdb/aresdb` | [uber/aresdb](https://github.com/uber/aresdb) |
-| 71 | **HeavyDB** | 3.1k | `heavydb/heavydb` | [heavyai/heavydb](https://github.com/heavyai/heavydb) |
-| 52 | **torch2trt** | 4.9k | `torch2trt/torch2trt` | [NVIDIA-AI-IOT/torch2trt](https://github.com/NVIDIA-AI-IOT/torch2trt) |
-| 52 | **ArrayFire** | 4.9k | `arrayfire/arrayfire` | [arrayfire/arrayfire](https://github.com/arrayfire/arrayfire) |
-| 53 | **AITemplate** | 4.7k | `aitemplate/aitemplate` | [facebookincubator/AITemplate](https://github.com/facebookincubator/AITemplate) |
-| 54 | **pytorch-YOLOv4** | 4.5k | `pytorch-yolov4/pytorch-YOLOv4` | [Tianxiaomo/pytorch-YOLOv4](https://github.com/Tianxiaomo/pytorch-YOLOv4) |
-| 47 | **NCCL** | 5k | `nccl/nccl` | [NCCL](https://github.com/NVIDIA/nccl) |
-| 72 | **ExLlamaV2 (exllamav2)** | 4.5k | `exllamav2/exllamav2` | [turboderp-org/exllamav2](https://github.com/turboderp-org/exllamav2) |
-| 73 | **HRNet (deep-high-resolution-net.pytorch)** | 4.5k | `hrnet/deep-high-resolution-net.pytorch` | [leoxiaobin/deep-high-resolution-net.pytorch](https://github.com/leoxiaobin/deep-high-resolution-net.pytorch) |
-| 48 | **Rust CUDA** | 5k | `rust-cuda/rust-cuda` | [Rust CUDA](https://github.com/Rust-GPU/rust-cuda) |
+| 47 | **Blitzar** | 4.9k | `blitzar/blitzar` | [spaceandtimefdn/blitzar](https://github.com/spaceandtimefdn/blitzar) |
+| 48 | **tiny-cuda-nn** | 4.5k | `tiny-cuda-nn/tiny-cuda-nn` | [NVlabs/tiny-cuda-nn](https://github.com/NVlabs/tiny-cuda-nn) |
+| 49 | **lite.ai.toolkit** | 4.4k | `lite.ai.toolkit/lite.ai.toolkit` | [xlite-dev/lite.ai.toolkit](https://github.com/xlite-dev/lite.ai.toolkit) |
+| 50 | **CTranslate2** | 4.5k | `ctranslate2/ctranslate2` | [OpenNMT/CTranslate2](https://github.com/OpenNMT/CTranslate2) |
+| 51 | **warp-ctc** | 4.1k | `warp-ctc/warp-ctc` | [baidu-research/warp-ctc](https://github.com/baidu-research/warp-ctc) |
+| 52 | **SENet** | 3.6k | `SENet/SENet` | [hujie-frank/SENet](https://github.com/hujie-frank/SENet) |
+| 53 | **StringZilla** | 3.5k | `StringZilla/StringZilla` | [ashvardanian/StringZilla](https://github.com/ashvardanian/StringZilla) |
+| 54 | **LightSeq** | 3.3k | `lightseq/lightseq` | [bytedance/lightseq](https://github.com/bytedance/lightseq) |
+| 55 | **FlowNet2-PyTorch** | 3.3k | `flownet2-pytorch/flownet2-pytorch` | [NVIDIA/flownet2-pytorch](https://github.com/NVIDIA/flownet2-pytorch) |
+| 56 | **LYGIA** | 3.3k | `lygia/lygia` | [patriciogonzalezvivo/lygia](https://github.com/patriciogonzalezvivo/lygia) |
+| 57 | **Jittor** | 3.2k | `jittor/jittor` | [Jittor/jittor](https://github.com/Jittor/jittor) |
+| 58 | **cuda-python** | 3.3k | `cuda-python/cuda-python` | [NVIDIA/cuda-python](https://github.com/NVIDIA/cuda-python) |
+| 59 | **TransformerEngine** | 3.3k | `TransformerEngine/TransformerEngine` | [NVIDIA/TransformerEngine](https://github.com/NVIDIA/TransformerEngine) |
+| 60 | **SageAttention** | 3.4k | `SageAttention/SageAttention` | [thu-ml/SageAttention](https://github.com/thu-ml/SageAttention) |
+| 61 | **ThunderKittens** | 3.4k | `ThunderKittens/ThunderKittens` | [HazyResearch/ThunderKittens](https://github.com/HazyResearch/ThunderKittens) |
+| 62 | **MMDeploy** | 3.1k | `mmdeploy/mmdeploy` | [open-mmlab/mmdeploy](https://github.com/open-mmlab/mmdeploy) |
+| 63 | **AresDB** | 3.1k | `aresdb/aresdb` | [uber/aresdb](https://github.com/uber/aresdb) |
+| 64 | **HeavyDB** | 3.1k | `heavydb/heavydb` | [heavyai/heavydb](https://github.com/heavyai/heavydb) |
+| 65 | **torch2trt** | 4.9k | `torch2trt/torch2trt` | [NVIDIA-AI-IOT/torch2trt](https://github.com/NVIDIA-AI-IOT/torch2trt) |
+| 66 | **ArrayFire** | 4.9k | `arrayfire/arrayfire` | [arrayfire/arrayfire](https://github.com/arrayfire/arrayfire) |
+| 67 | **AITemplate** | 4.7k | `aitemplate/aitemplate` | [facebookincubator/AITemplate](https://github.com/facebookincubator/AITemplate) |
+| 68 | **pytorch-YOLOv4** | 4.5k | `pytorch-yolov4/pytorch-YOLOv4` | [Tianxiaomo/pytorch-YOLOv4](https://github.com/Tianxiaomo/pytorch-YOLOv4) |
+| 69 | **NCCL** | 5k | `nccl/nccl` | [NCCL](https://github.com/NVIDIA/nccl) |
+| 70 | **ExLlamaV2 (exllamav2)** | 4.5k | `exllamav2/exllamav2` | [turboderp-org/exllamav2](https://github.com/turboderp-org/exllamav2) |
+| 71 | **HRNet (deep-high-resolution-net.pytorch)** | 4.5k | `hrnet/deep-high-resolution-net.pytorch` | [leoxiaobin/deep-high-resolution-net.pytorch](https://github.com/leoxiaobin/deep-high-resolution-net.pytorch) |
+| 72 | **Rust CUDA** | 5k | `rust-cuda/rust-cuda` | [Rust CUDA](https://github.com/Rust-GPU/rust-cuda) |
 | 73 | **Thrust** | 5k | `thrust/thrust` | [Thrust](https://github.com/NVIDIA/thrust) |
 | 74 | **cuML** | 5k | `cuml/cuml` | [cuML](https://github.com/rapidsai/cuml) |
 | 75 | **Chitu** | 3k | `chitu/chitu` | [Chitu](https://github.com/thu-pacman/chitu) |
