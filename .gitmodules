@@ -326,3 +326,7 @@
 	path = lichtfeld-studio/LichtFeld-Studio
 	url = https://github.com/MrNeRF/LichtFeld-Studio.git
 	branch = master
+[submodule "model-optimizer/Model-Optimizer"]
+	path = model-optimizer/Model-Optimizer
+	url = https://github.com/NVIDIA/Model-Optimizer.git
+	branch = main
