@@ -338,3 +338,23 @@
 	path = dreamplace/DREAMPlace
 	url = https://github.com/limbo018/DREAMPlace.git
 	branch = master
+[submodule "how-to-optim-algorithm-in-cuda/how-to-optim-algorithm-in-cuda"]
+	path = how-to-optim-algorithm-in-cuda/how-to-optim-algorithm-in-cuda
+	url = https://github.com/BBuf/how-to-optim-algorithm-in-cuda.git
+	branch = master
+[submodule "cuda-library-samples/CUDALibrarySamples"]
+	path = cuda-library-samples/CUDALibrarySamples
+	url = https://github.com/NVIDIA/CUDALibrarySamples.git
+	branch = main
+[submodule "torch-ngp/torch-ngp"]
+	path = torch-ngp/torch-ngp
+	url = https://github.com/ashawkey/torch-ngp.git
+	branch = main
+[submodule "cugraph/cugraph"]
+	path = cugraph/cugraph
+	url = https://github.com/rapidsai/cugraph.git
+	branch = main
+[submodule "deepmd-kit/deepmd-kit"]
+	path = deepmd-kit/deepmd-kit
+	url = https://github.com/deepmodeling/deepmd-kit.git
+	branch = master
