@@ -322,3 +322,7 @@
 	path = cuda-course/cuda-course
 	url = https://github.com/Infatoshi/cuda-course.git
 	branch = master
+[submodule "lichtfeld-studio/LichtFeld-Studio"]
+	path = lichtfeld-studio/LichtFeld-Studio
+	url = https://github.com/MrNeRF/LichtFeld-Studio.git
+	branch = master
