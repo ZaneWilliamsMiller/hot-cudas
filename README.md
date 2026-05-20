@@ -111,6 +111,7 @@ git submodule update --remote
 | 87 | **LichtFeld-Studio** | 3.1k | `lichtfeld-studio/LichtFeld-Studio` | [MrNeRF/LichtFeld-Studio](https://github.com/MrNeRF/LichtFeld-Studio) |
 | 88 | **Model-Optimizer** | 2.7k | `model-optimizer/Model-Optimizer` | [NVIDIA/Model-Optimizer](https://github.com/NVIDIA/Model-Optimizer) |
 | 89 | **CV-CUDA** | 2.7k | `cv-cuda/CV-CUDA` | [CVCUDA/CV-CUDA](https://github.com/CVCUDA/CV-CUDA) |
+| 90 | **DREAMPlace** | 998 | `dreamplace/DREAMPlace` | [limbo018/DREAMPlace](https://github.com/limbo018/DREAMPlace) |
 
 ---
 

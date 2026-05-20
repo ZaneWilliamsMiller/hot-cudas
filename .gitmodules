@@ -334,3 +334,7 @@
 	path = cv-cuda/CV-CUDA
 	url = https://github.com/CVCUDA/CV-CUDA.git
 	branch = main
+[submodule "dreamplace/DREAMPlace"]
+	path = dreamplace/DREAMPlace
+	url = https://github.com/limbo018/DREAMPlace.git
+	branch = master
