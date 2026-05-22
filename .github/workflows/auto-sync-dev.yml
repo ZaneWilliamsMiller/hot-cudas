@@ -1,0 +1,35 @@
+name: Auto Sync Dev Branch
+
+on:
+  schedule:
+    # 每天北京时间 11:00 (UTC 03:00)
+    - cron: '0 3 * * *'
+  # 也支持手动触发
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync-dev:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    steps:
+      - name: Checkout dev branch (no submodules initially)
+        uses: actions/checkout@v4
+        with:
+          ref: dev
+          fetch-depth: 0
+          # We fetch submodules ourselves in the script —
+          # faster and more control over errors
+          submodules: 'false'
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run auto-sync script
+        run: python3 .github/scripts/auto-sync-dev.py
