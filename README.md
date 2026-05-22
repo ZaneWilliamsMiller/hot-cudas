@@ -1,6 +1,6 @@
 # 🔥 Hot CUDAs — CUDA/GPU 开源项目知识库
 
-> 自动整理 2026-05-20 | 99 个热门项目 | 深度源码分析 · Git Submodules · 持续更新
+> 自动整理 2026-05-22 | 99 个热门项目 | 深度源码分析 · Git Submodules · 持续更新
 
 ## 📦 使用方式
 
@@ -103,7 +103,7 @@ git submodule update --remote
 | 79 | **Lc0** | 3k | `lc0/lc0` | [LeelaChessZero/lc0](https://github.com/LeelaChessZero/lc0) |
 | 80 | **MinkowskiEngine** | 3k | `minkowski-engine/MinkowskiEngine` | [NVIDIA/MinkowskiEngine](https://github.com/NVIDIA/MinkowskiEngine) |
 | 81 | **tensorRT_Pro** | 3k | `tensorrt-pro/tensorRT_Pro` | [shouxieai/tensorRT_Pro](https://github.com/shouxieai/tensorRT_Pro) |
-| 82 | **how-to-optim-algorithm-in-cuda** | 2.9k | `how-to-optim-algorithm-in-cuda/how-to-optim-algorithm-in-cuda` | [how-to-optim-algorithm-in-cuda](https://github.com/BBuf/how-to-optim-algorithm-in-cuda) |
+| 82 | **how-to-optim-algorithm-in-cuda** | 3k | `how-to-optim-algorithm-in-cuda/how-to-optim-algorithm-in-cuda` | [how-to-optim-algorithm-in-cuda](https://github.com/BBuf/how-to-optim-algorithm-in-cuda) |
 | 83 | **Model-Optimizer** | 2.7k | `model-optimizer/Model-Optimizer` | [NVIDIA/Model-Optimizer](https://github.com/NVIDIA/Model-Optimizer) |
 | 84 | **CV-CUDA** | 2.7k | `cv-cuda/CV-CUDA` | [CVCUDA/CV-CUDA](https://github.com/CVCUDA/CV-CUDA) |
 | 85 | **CUDALibrarySamples** | 2.4k | `cuda-library-samples/CUDALibrarySamples` | [CUDALibrarySamples](https://github.com/NVIDIA/CUDALibrarySamples) |
